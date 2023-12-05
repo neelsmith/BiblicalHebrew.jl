@@ -1,3 +1,12 @@
+const qamats_ch = Char(0x000005b8)
+const patah_ch = Char(0x000005b7)
+const aleph_ch = Char(0x000005d0)
+const he_ch = Char(0x000005d4)
+const het_ch = Char(0x000005d7)
+const ayin_ch = Char(0x000005e2)
+
+
+const gutturals = [aleph_ch, he_ch, het_ch, ayin_ch]
 
 ucode_names = Dict(
     "591" => "etnatha",

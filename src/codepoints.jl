@@ -19,14 +19,3 @@ function cpname(ch::Char)
     hexval in keys(ucode_names) ? ucode_names[hexval] : "NOT FOUND: $(ch)"
 end
 
-
-function cpname(hex)
-
-end
-
-"""Return Unicode name for code point.
-"""
-function cpname(cp::Int)
-
-
-end
