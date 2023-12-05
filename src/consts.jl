@@ -1,6 +1,6 @@
 
-cpnames = Dict(
-    "591" => "ETNAHTA",
+ucode_names = Dict(
+    "591" => "etnatha",
     "592" => "segol",
     "593" => "shalshelet",
     "594" => "zaqef qatan",
