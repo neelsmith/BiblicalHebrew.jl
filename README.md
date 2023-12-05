@@ -1,2 +1,2 @@
 # Hebrew.jl
-Hebrew orthography in Julia
+Biblical Hebrew orthography in Julia
