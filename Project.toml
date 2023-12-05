@@ -1,0 +1,12 @@
+name = "Hebrew"
+uuid = "23d2231d-1fc1-47c2-a612-987552d9b38e"
+authors = ["Neel Smith  <dnsmith.neel@gmail.com>"]
+version = "0.1.0"
+
+[deps]
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+TestSetExtensions = "98d24dd4-01ad-11ea-1b02-c9a08f80db04"
+Unicode = "4ec0a83e-493e-50e2-b9ac-8f72acf5a8f5"
+
+[compate]
+TestSetExtensions = "2"
