@@ -36,6 +36,9 @@ function qal_perfect(root,form)
 
 end
 
+# Woo hoo, singular complete!
+
+"""Generate requested person+number+gender of the perfect for the given strong verb."""
 function qal_perfect_strong(root, form)
     consonants = collect(unpointed(root))
 
@@ -47,6 +50,13 @@ function qal_perfect_strong(root, form)
 
     elseif form == "2sm"
         string(qamats(consonants[1]), patah(ole(consonants[2])), sheva(consonants[3]), dagesh("ת") |> qamats)
+
+    elseif form == "2sf"
+        string(qamats(consonants[1]), patah(consonants[2]), sheva(consonants[3]), dagesh("ת") |> sheva)
+
+
+    elseif form == "1sc"
+        string(qamats(consonants[1]), patah(ole(consonants[2])), sheva(consonants[3]), mappiq("נו"))
     else
         @warn("Form $(form) not recognized or not yet implemented.")
     end

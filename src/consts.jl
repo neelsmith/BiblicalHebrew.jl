@@ -5,7 +5,9 @@ const patah_ch = Char(0x000005b7)
 const seghol_ch = Char(0x000005b6)
 const sheva_ch = Char(0x000005b0)
 
-const dagesh_ch = Char(0x000005bc) 
+const dagesh_ch = Char(0x000005bc)
+const mappiq_ch = Char(0x000005bc) # Yes, they're the same Unicode code point!
+
 const metheg_ch = Char(0x000005bd) 
 
 

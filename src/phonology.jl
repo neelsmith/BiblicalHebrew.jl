@@ -16,5 +16,5 @@ end
 """Add dagesh to string `s`."""
 function dagesh(s)
     # Only legal for bgdkft
-    string(s, metheg_ch)
+    string(s, dagesh_ch)
 end

@@ -33,3 +33,10 @@ end
 function ole(s)
     string(s, ole_ch)
 end
+
+
+
+"""Add mappiq to string `s`."""
+function mappiq(s)
+    string(s, mappiq_ch)
+end
