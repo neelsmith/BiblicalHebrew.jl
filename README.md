@@ -1,2 +1,3 @@
 # Hebrew.jl
-Biblical Hebrew orthography in Julia
+
+Modelling basic orthography of Biblical Hebrew in Julia
