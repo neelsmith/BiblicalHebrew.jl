@@ -1,5 +1,11 @@
 const qamats_ch = Char(0x000005b8)
 const patah_ch = Char(0x000005b7)
+const seghol_ch = Char(0x000005b6)
+const sheva_ch = Char(0x000005b6)
+
+const metheg_ch = Char(0x000005bd)
+
+
 const aleph_ch = Char(0x000005d0)
 const he_ch = Char(0x000005d4)
 const het_ch = Char(0x000005d7)
@@ -55,7 +61,7 @@ ucode_names = Dict(
     "5ba" => "holam haser",
     "5bb" => "qubuts", 
     "5bc" => "dagesh or mapiq",
-    "5bd" => "meteg",
+    "5bd" => "metheg",
     "5be" => "maqaf",
     "5bf" => "rafe",
 

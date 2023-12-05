@@ -24,11 +24,11 @@ function rootclass(verb)
     # pe-guttural
 end
 
-function qal(root,form)
+function qal_perfect(root,form)
     verbclass = rootclass(root)    
 
     if verbclass == :strong
-        qal_strong(root, form)
+        qal_perfect_strong(root, form)
     else
         @warn("Verb class $(verbclass) not yet implemented")
         nothing
@@ -36,11 +36,13 @@ function qal(root,form)
 
 end
 
-function qal_strong(root, form)
+function qal_perfect_strong(root, form)
     consonants = collect(unpointed(root))
 
     if form == "3sm"
-        string(Hebrew.qamats(consonants[1]), Hebrew.patah(consonants[2]), consonants[3])
+        string(qamats(consonants[1]), patah(consonants[2]), consonants[3])
+    elseif form == "3sf"
+        string(qamats(consonants[1]) |> metheg, sheva(consonants[2]), qamats(consonants[3]), he_ch)
     else
         @warn("Form $(form) not recognized or not yet implemented.")
     end
