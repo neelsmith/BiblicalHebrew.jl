@@ -9,7 +9,6 @@ function int(hexstr)
     parse(Int, hexstr, base = 16)
 end
 
-
 """Find Unicode codepoint for a hexadecimal string."""
 function cp(hexstr)
     int(hexstr) |> Char
