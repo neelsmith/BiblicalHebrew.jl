@@ -41,8 +41,12 @@ function qal_perfect_strong(root, form)
 
     if form == "3sm"
         string(qamats(consonants[1]), patah(consonants[2]), consonants[3])
+
     elseif form == "3sf"
         string(qamats(consonants[1]) |> metheg, sheva(consonants[2]), qamats(consonants[3]), he_ch)
+
+    elseif form == "2sm"
+        string(qamats(consonants[1]), patah(ole(consonants[2])), sheva(consonants[3]), dagesh("ת") |> qamats)
     else
         @warn("Form $(form) not recognized or not yet implemented.")
     end

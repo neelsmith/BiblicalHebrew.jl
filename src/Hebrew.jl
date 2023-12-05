@@ -16,5 +16,6 @@ include("vocalize.jl")
 # This is not serious: just experiments
 # prior to starting a separate package.
 include("morphology/qal.jl")
+include("morphology/verbs.jl")
 
 end # module Hebrew

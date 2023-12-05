@@ -1,16 +1,30 @@
+const ole_ch = Char(0x000005ab) 
+
 const qamats_ch = Char(0x000005b8)
 const patah_ch = Char(0x000005b7)
 const seghol_ch = Char(0x000005b6)
-const sheva_ch = Char(0x000005b6)
+const sheva_ch = Char(0x000005b0)
 
-const metheg_ch = Char(0x000005bd)
+const dagesh_ch = Char(0x000005bc) 
+const metheg_ch = Char(0x000005bd) 
 
+
+
+const bet_ch = Char(0x000005d1)
+const gimel_ch = Char(0x000005d2)
+const dalet_ch = Char(0x000005d3)
+const kaph_final_ch = Char(0x000005da)
+const kaph_ch = Char(0x000005db)
+const pe_final_ch = Char(0x000005e3)
+const pe_ch = Char(0x000005e4)
+const tav_ch = Char(0x000005ea)
+
+const begadhkephat = [bet_ch, gimel_ch, dalet_ch, kaph_final_ch, kaph_ch, pe_final_ch, pe_ch, tav_ch]
 
 const aleph_ch = Char(0x000005d0)
 const he_ch = Char(0x000005d4)
 const het_ch = Char(0x000005d7)
 const ayin_ch = Char(0x000005e2)
-
 
 const gutturals = [aleph_ch, he_ch, het_ch, ayin_ch]
 
