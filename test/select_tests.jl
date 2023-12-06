@@ -4,6 +4,7 @@ Pkg.activate("..")
 
 using Hebrew
 using Unicode
+using Orthography
 
 using Test
 using TestSetExtensions
