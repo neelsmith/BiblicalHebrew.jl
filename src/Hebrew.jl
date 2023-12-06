@@ -8,6 +8,8 @@ import Orthography: tokentypes
 import Orthography: codepoints 
 import Orthography: tokenize
 
+using Documenter, DocStringExtensions
+
 include("utils.jl")
 
 include("consts.jl")
