@@ -14,7 +14,13 @@ OrthographyTrait(::Type{HebrewOrthography}) = IsOrthographicSystem()
 $(SIGNATURES)    
 """    
 function tokenize(s::AbstractString, o::HebrewOrthography)
-    s #tokenizeLiteraryGreek(s)
+    
+    tokenstrings = map(split(s)) do t
+        
+    end
+    
+
+    #OrthographicToken(normed, LexicalToken())
 end
 
 """Implement Orthography's codepoints functions for LiteraryGreekOrthography.
@@ -22,7 +28,7 @@ end
 $(SIGNATURES)    
 """    
 function codepoints(ortho::HebrewOrthography)
-    [] #ortho.codepoints
+    vcat(ws_chars(), hebrew_chars())
 end
 
 """Implement Orthography's tokentypes functions for LiteraryGreekOrthography.
@@ -30,6 +36,21 @@ end
 $(SIGNATURES)    
 """    
 function tokentypes(ortho::HebrewOrthography)
-    [] # ortho.tokencategories
+    [
+        Orthography.LexicalToken,
+        Orthography.PunctuationToken,
+        Orthography.NumericToken
+    ]
 end
     
+"""Whitespace characters accepted in this orthography"""
+function ws_chars()
+    [' ', '\n', '\t', '\r'] |> sort
+end
+
+"""Compose a list of all defined characters in the Hebrew
+range of Unicode as `Char`s, sorted in Unicode order.
+"""
+function hebrew_chars()
+    map(s -> parse(Int, s, base = 16), keys(ucode_names).|> string |> sort)  .|> Char
+end

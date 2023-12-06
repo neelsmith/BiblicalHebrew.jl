@@ -10,7 +10,8 @@ const mappiq_ch = Char(0x000005bc) # Yes, they're the same Unicode code point!
 
 const metheg_ch = Char(0x000005bd) 
 
-
+const gershe_ch = Char(0x000005f3) 
+const gershayim_ch = Char(0x000005f4) 
 
 const bet_ch = Char(0x000005d1)
 const gimel_ch = Char(0x000005d2)

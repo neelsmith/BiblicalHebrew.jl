@@ -10,13 +10,15 @@ import Orthography: tokenize
 
 using Documenter, DocStringExtensions
 
+export HebrewOrthography
+
 include("utils.jl")
 
 include("consts.jl")
 include("codepoints.jl")
 include("phonology.jl")
 include("vocalize.jl")
-
+include("orthography.jl")
 
 
 # This is not serious: just experiments
