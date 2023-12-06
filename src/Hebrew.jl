@@ -21,9 +21,5 @@ include("vocalize.jl")
 include("orthography.jl")
 
 
-# This is not serious: just experiments
-# prior to starting work on Luhot.jl.
-include("morphology/qal.jl")
-include("morphology/verbs.jl")
 
 end # module Hebrew
