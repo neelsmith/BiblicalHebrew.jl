@@ -7,12 +7,13 @@
 - valid characters are the following code points from the Unicode Hebrew range... plus the white space characters `[ \n, \r, \t]`
 - tokenizes characters as lexical, numeric or punctuation tokens. White space characters are thrown away in tokenization
 - punctuation tokens are the punctuation character *soph pasuq*, and the character ....  
+- numeric tokens are sequences of alphabetic characters followed by *geresh* (for single digits) or *gershayim* (for multi-digit numeric expressions)
 - other indications of accent (*ole*, *raphe*, *metheg*, *athnah*), vowel pointing (*niqqud*) and consonants form lexical tokens
 
 
 ## Other orthography functions
 
-Includes orthography functions to
+Includes orthography functions to:
 
 
 - identify codepoints as consonantal, niqqud, accent or punctuation
