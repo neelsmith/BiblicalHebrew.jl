@@ -1,18 +1,3 @@
-const ole_ch = Char(0x000005ab) 
-
-const qamats_ch = Char(0x000005b8)
-const patah_ch = Char(0x000005b7)
-const seghol_ch = Char(0x000005b6)
-const sheva_ch = Char(0x000005b0)
-
-const dagesh_ch = Char(0x000005bc)
-const mappiq_ch = Char(0x000005bc) # Yes, they're the same Unicode code point!
-
-const metheg_ch = Char(0x000005bd) 
-
-const gershe_ch = Char(0x000005f3) 
-const gershayim_ch = Char(0x000005f4) 
-
 const bet_ch = Char(0x000005d1)
 const gimel_ch = Char(0x000005d2)
 const dalet_ch = Char(0x000005d3)
@@ -24,12 +9,52 @@ const tav_ch = Char(0x000005ea)
 
 const begadhkephat = [bet_ch, gimel_ch, dalet_ch, kaph_final_ch, kaph_ch, pe_final_ch, pe_ch, tav_ch]
 
+
+
+
 const aleph_ch = Char(0x000005d0)
 const he_ch = Char(0x000005d4)
 const het_ch = Char(0x000005d7)
 const ayin_ch = Char(0x000005e2)
 
 const gutturals = [aleph_ch, he_ch, het_ch, ayin_ch]
+
+
+
+const qamats_ch = Char(0x000005b8)
+const patah_ch = Char(0x000005b7)
+const seghol_ch = Char(0x000005b6)
+const sheva_ch = Char(0x000005b0)
+# hireq
+# tsere
+# qibbuts
+# holem
+
+#= const nequddot = [
+
+]
+=#
+
+
+const ole_ch = Char(0x000005ab) 
+const metheg_ch = Char(0x000005bd) 
+# raphe
+# athnah
+
+
+const dagesh_ch = Char(0x000005bc)
+const mappiq_ch = Char(0x000005bc) # Yes, they're the same Unicode code point!
+
+
+
+
+# For marking numbers:
+const gershe_ch = Char(0x000005f3) 
+const gershayim_ch = Char(0x000005f4) 
+
+# Token breakers:
+const soph_pasuq_ch = Char(0x000005c3) 
+const maqaf_ch = Char(0x000005be)
 
 ucode_names = Dict(
     "591" => "etnatha",

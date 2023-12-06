@@ -7,6 +7,7 @@ import Orthography: OrthographyTrait
 import Orthography: tokentypes 
 import Orthography: codepoints 
 import Orthography: tokenize
+import Orthography: validstring
 
 using Documenter, DocStringExtensions
 
