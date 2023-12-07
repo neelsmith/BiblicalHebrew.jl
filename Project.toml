@@ -1,4 +1,4 @@
-name = "Hebrew"
+name = "BiblicalHebrew"
 uuid = "23d2231d-1fc1-47c2-a612-987552d9b38e"
 authors = ["Neel Smith  <dnsmith.neel@gmail.com>"]
 version = "0.1.0"
