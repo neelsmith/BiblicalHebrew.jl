@@ -23,7 +23,7 @@ function tokenize_string(s, o::HebrewOrthography = HebrewOrthography())
         grphms = graphemes(t) |> collect
         #@info("Last one is $(grphms[end]) so $(codepoint(grphms[end]))")
         if length(grphms) == 1
-            @info("LOOK at $(grphms[1])")
+            @debug("LOOK at $(grphms[1])")
             if grphms[1] == string(maqaf_ch) 
                 push!(results, OrthographicToken(grphms[1], PunctuationToken()))
             elseif grphms[1] == string(soph_pasuq_ch)

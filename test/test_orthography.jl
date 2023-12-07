@@ -37,11 +37,13 @@ end
     אַחַ֨ד עָשָׂ֥ר יוֹם֙ מֵֽחֹרֵ֔ב דֶּ֖רֶךְ הַר־שֵׂעִ֑יר עַ֖ד קָדֵ֥שׁ בַּרְנֵֽעַ׃ 
 """
     twoverse_tokens = tokenize(two_verses, ortho)
-        
+    verse_ends = filter(t -> t.text == "׃", twoverse_tokens)
+    @test length(verse_ends) == 2
+    @test map(t -> t.tokencategory, verse_ends)[1] isa PunctuationToken
 end
 
 @testset "Test tokenizing utilities" begin
     s = "abba"
-    @test_broken Hebrew.codept_split(s, 'b') == ["a", "b", "b", "a"]
+    @test Hebrew.codept_split(s, 'b') == ["a", "b", "b", "a"]
     @test Hebrew.codept_split(s, 'a') == ["a", "bb", "a"]
 end
