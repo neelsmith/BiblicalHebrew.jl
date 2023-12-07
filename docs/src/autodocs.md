@@ -1,4 +1,4 @@
-# Auto docs
+# Comprehensive list of documented constants and functions
 
 ## Constants
 

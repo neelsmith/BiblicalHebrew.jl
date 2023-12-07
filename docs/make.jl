@@ -16,9 +16,11 @@ using Documenter, DocStringExtensions, Hebrew
 makedocs(
     sitename="Hebrew.jl",
     pages = [
-            "User's guide" => "index.md",  
-            "API" => "apis.md",
-            "Comprehensive autodocs" => "auto.md"
+            "Hebrew.jl" => "index.md",  
+            "Other functions for working with Hebrew orthography" => "more_ortho.md",
+            "Working with vowel points (niqqud)" => "niqqud.md",
+            "Generic utility functions" => "utils.md",
+            "Comprehensive autodocs" => "autodocs.md"
     ],
     )
 

@@ -40,7 +40,16 @@ end
     verse_ends = filter(t -> t.text == "׃", twoverse_tokens)
     @test length(verse_ends) == 2
     @test map(t -> t.tokencategory, verse_ends)[1] isa PunctuationToken
+
+
+
+    construct = tokenize("בֵּֽין־פָּארָ֧ן", ortho)
+
 end
+
+
+
+
 
 @testset "Test tokenizing utilities" begin
     s = "abba"
