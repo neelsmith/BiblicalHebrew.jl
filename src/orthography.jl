@@ -1,4 +1,7 @@
-function cp_split(s,c::Char; keep = true)
+"""Split string `s` into substrings separated by character `c`;
+if `keep` is true, also maintain `c` as a string in the resulting list.
+"""
+function codept_split(s, c::Char; keep = true)
     results = String[]
     current = Char[]
     for ch in s
@@ -29,21 +32,30 @@ OrthographyTrait(::Type{HebrewOrthography}) = IsOrthographicSystem()
 $(SIGNATURES)    
 """    
 function tokenize(s::AbstractString, o::HebrewOrthography)
-
-    sentences = cp_split(s, soph_pasuq_ch)
-    sentences .|> tokenize_sentence |> Iterators.flatten |> collect
-    
+    sentences = codept_split(s, soph_pasuq_ch)
+    nojoins = map(s -> codept_split(s, maqaf_ch), sentences) |> Iterators.flatten |> collect
+    nojoins .|> tokenize_string |> Iterators.flatten |> collect
 end
 
-function tokenize_sentence(s, o::HebrewOrthography = HebrewOrthography())
+function tokenize_string(s, o::HebrewOrthography = HebrewOrthography())
     results = OrthographicToken[]
     tokenstrings = map(split(s)) do t
         grphms = graphemes(t) |> collect
         #@info("Last one is $(grphms[end]) so $(codepoint(grphms[end]))")
-        if endswith(grphms[end], gershe_ch) || endswith(grphms[end], gershayim_ch)
+        if length(grphms) == 1
+            @info("LOOK at $(grphms[1])")
+            if grphms[1] == string(maqaf_ch) 
+                push!(results, OrthographicToken(grphms[1], PunctuationToken()))
+            elseif grphms[1] == string(soph_pasuq_ch)
+                push!(results, OrthographicToken(grphms[1], PunctuationToken()))
+            else
+                push!(results, OrthographicToken(grphms[1], LexicalToken()))
+            end
+
+        elseif endswith(grphms[end], gershe_ch) || endswith(grphms[end], gershayim_ch)
             s = join(grphms[1:end-1])
             push!(results, OrthographicToken(s, NumericToken()))
-        else
+        else 
             s = join(grphms)
             push!(results, OrthographicToken(s, LexicalToken()))
         end

@@ -39,3 +39,9 @@ end
     twoverse_tokens = tokenize(two_verses, ortho)
         
 end
+
+@testset "Test tokenizing utilities" begin
+    s = "abba"
+    @test_broken Hebrew.codept_split(s, 'b') == ["a", "b", "b", "a"]
+    @test Hebrew.codept_split(s, 'a') == ["a", "bb", "a"]
+end
