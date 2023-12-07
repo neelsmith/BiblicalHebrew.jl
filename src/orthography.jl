@@ -17,6 +17,12 @@ function tokenize(s::AbstractString, o::HebrewOrthography)
     nojoins .|> tokenize_string |> Iterators.flatten |> collect
 end
 
+
+"""Tokenize a string `s` where `s` has already
+isolated the token separators maqaf and soph pasuq.
+This can be accomplished by feeding `s` to the `tokenize` function
+with a `HebrewOrthograph`.
+"""
 function tokenize_string(s, o::HebrewOrthography = HebrewOrthography())
     results = OrthographicToken[]
     tokenstrings = map(split(s)) do t
