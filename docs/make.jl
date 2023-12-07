@@ -10,7 +10,7 @@ using Pkg
 Pkg.activate(".")
 Pkg.instantiate()
 
-using Documenter, DocStringExtensions, Hebrew
+using Documenter, DocStringExtensions, BiblicalHebrew
 
 
 makedocs(

@@ -3,13 +3,13 @@
 ## Constants
 
 ```@autodocs
-Modules = [Hebrew]
+Modules = [BiblicalHebrew]
 Order   = [:constant]
 ```
 
 ## Functions
 
 ```@autodocs
-Modules = [Hebrew]
+Modules = [BiblicalHebrew]
 Order   = [:function]
 ```
