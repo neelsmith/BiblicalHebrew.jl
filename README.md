@@ -1,4 +1,4 @@
-# Hebrew.jl
+# BiblicalHebrew.jl
 
 `Hebrew` implements the `OrthographicSystem` interface of the `Orthography` package for Biblical Hebrew texts using the Hebrew range of Unicode.
 

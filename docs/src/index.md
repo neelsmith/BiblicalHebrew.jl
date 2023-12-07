@@ -1,4 +1,4 @@
-# Hebrew.jl
+# BiblicalHebrew.jl
 
 ## The `OrthographicSystem` interface
 
