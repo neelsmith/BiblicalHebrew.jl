@@ -14,9 +14,9 @@ using Documenter, DocStringExtensions, Hebrew
 
 
 makedocs(
-    sitename="Hebrew.jl",
+    sitename="BiblicalHebrew.jl",
     pages = [
-            "Hebrew.jl" => "index.md",  
+            "BiblicalHebrew.jl" => "index.md",  
             "Other functions for working with Hebrew orthography" => "more_ortho.md",
             "Working with vowel points (niqqud)" => "niqqud.md",
             "Generic utility functions" => "utils.md",
@@ -25,5 +25,5 @@ makedocs(
     )
 
 deploydocs(
-    repo = "github.com/neelsmith/Hebrew.jl.git",
+    repo = "github.com/neelsmith/BiblicalHebrew.jl.git",
 )

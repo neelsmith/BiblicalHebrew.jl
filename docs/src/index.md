@@ -7,7 +7,7 @@ The type `HebrewOrthography` implements the `OrthographicSystem` interface (from
 Create a `HebrewOrthography` object and use it to get metadata about the orthography, to validate strings, and to tokenize strings.
 
 ```@example tour
-using Hebrew, Orthography
+using BiblicalHebrew, Orthography
 ortho = HebrewOrthography()
 ```
 
@@ -48,7 +48,7 @@ Tokenization associates a string value with a token category. Since punctuation 
 ```@example tour
 s1 = "בֵּֽין"
 s2 = "פָּארָ֧ן"
-construct = Hebrew.maqaf_join([s1,s2])
+construct = BiblicalHebrew.maqaf_join([s1,s2])
 tokens = tokenize(construct, ortho)
 ```
 
@@ -63,8 +63,8 @@ Numeric tokens are followed by *gershe* or *gershayim*. To compose a string for 
 
 
 ```@example tour
-aleph = string(Hebrew.aleph_ch)
-one = Hebrew.gershe(aleph)
+aleph = string(BiblicalHebrew.aleph_ch)
+one = BiblicalHebrew.gershe(aleph)
 tokenize(one, ortho)
 ```
 

@@ -1,4 +1,4 @@
-module Hebrew
+module BiblicalHebrew
 
 using Unicode
 
@@ -23,4 +23,4 @@ include("orthography.jl")
 
 
 
-end # module Hebrew
+end # module BiblicalHebrew

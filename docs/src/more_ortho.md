@@ -1,5 +1,5 @@
 ```@setup moreortho
-using Hebrew
+using BiblicalHebrew
 ```
 # Other functions for working with Hebrew orthography
 
@@ -10,7 +10,7 @@ Find the Unicode label for a codepoint.
 
 ```@example moreortho
 ch = 'ד'
-Hebrew.codept_name(ch)
+BiblicalHebrew.codept_name(ch)
 ```
 
 Reduce a string to a consonantal representation by stripping off accents and vocalization markings.
@@ -28,7 +28,7 @@ collect(s1) .|> codepoint .|> Char
 Consonantal reduction:
 
 ```@example moreortho
-stripped = Hebrew.unpointed(s1)
+stripped = BiblicalHebrew.unpointed(s1)
 collect(stripped) .|> codepoint .|> Char
 ```
 
