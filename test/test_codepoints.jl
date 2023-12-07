@@ -1,6 +1,3 @@
-@testset "Test indexing utilities" begin
-
-end
 
 
 @testset "Test Unicode code point sets" begin

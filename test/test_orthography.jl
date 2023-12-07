@@ -7,7 +7,7 @@
     expectedcharcount = 88
     @test length(charlist) == 88
     # Should be sorted, so last char is gershayim
-    @test charlist[end] == Hebrew.gershayim_ch
+    @test charlist[end] == BiblicalHebrew.gershayim_ch
 
 
     @test validstring("Hi!", ortho) ==  false
@@ -17,7 +17,7 @@ end
 
 @testset "Test tokenization" begin
     ortho = HebrewOrthography()
-    uno = string(Hebrew.aleph_ch, Hebrew.gershe_ch)
+    uno = string(BiblicalHebrew.aleph_ch, BiblicalHebrew.gershe_ch)
     tkns = tokenize(uno, ortho)
     @test length(tkns) == 1
     @test tkns[1].text == "א"
@@ -53,6 +53,6 @@ end
 
 @testset "Test tokenizing utilities" begin
     s = "abba"
-    @test Hebrew.codept_split(s, 'b') == ["a", "b", "b", "a"]
-    @test Hebrew.codept_split(s, 'a') == ["a", "bb", "a"]
+    @test BiblicalHebrew.codept_split(s, 'b') == ["a", "b", "b", "a"]
+    @test BiblicalHebrew.codept_split(s, 'a') == ["a", "bb", "a"]
 end
