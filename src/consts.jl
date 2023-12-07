@@ -10,8 +10,6 @@ const tav_ch = Char(0x000005ea)
 const begadhkephat = [bet_ch, gimel_ch, dalet_ch, kaph_final_ch, kaph_ch, pe_final_ch, pe_ch, tav_ch]
 
 
-
-
 const aleph_ch = Char(0x000005d0)
 const he_ch = Char(0x000005d4)
 const het_ch = Char(0x000005d7)
