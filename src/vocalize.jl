@@ -47,3 +47,8 @@ end
 function gershe(s)
     string(s, gershe_ch)
 end
+
+"""Connect a list of tokens together with `maqaf`."""
+function maqaf_join(v)
+    join(v, maqaf_ch)
+end

@@ -42,32 +42,27 @@ The orthography can identify three categories of token:
 tokentypes(ortho)
 ```
 
-Tokenization associates a string value with a token category:
+Tokenization associates a string value with a token category. Since punctuation like *maqaf* doesn't display properly in this documentation, we'll compose a string using the package's `maqaf_join` function to create a construct chain.
 
 ```@example tour
-tokens = tokenize("בֵּֽין־פָּארָ֧ן", ortho)
+s1 = "בֵּֽין"
+s2 = "פָּארָ֧ן"
+construct = Hebrew.maqaf_join([s1,s2])
+tokens = tokenize(construct, ortho)
 ```
 
-!!! note "A note on the preceding output"
-    The *maqaf* character does not display will with the fonts used by Julia's `Documenter` system: to verify that the punctuation token in this example in fact has the correct string value, the following block shows its that Unicode codepoint is in fact `05be`, the *maqaf*.
+Even if we can't see the *maqaf* in the resulting display, we can verify that the text value of punctuation token in this example in fact has the correct string by checking that its Unicode codepoint is in fact `05be`, the *maqaf*.
 
 ```@example tour
 maqaf_string =  tokens[2].text
 maqaf_string[1] |> codepoint
 ```
 
-Numeric tokens are followed by *gershe* or *gershayim*. The following example uses a named character constant and 
+Numeric tokens are followed by *gershe* or *gershayim*. The following example uses a named character constant, and appends a *gershe* to it using the package's `gershe` function to compose a string for the numeric value 1.
 
 ```@example tour
 aleph = string(Hebrew.aleph_ch)
 one = Hebrew.gershe(aleph)
 tokenize(one, ortho)
 ```
-
-
-
-- tokenizes characters as lexical, numeric or punctuation tokens. White space characters are thrown away in tokenization
-- punctuation tokens are the punctuation character *soph pasuq*, and the character ....  
-- numeric tokens are sequences of alphabetic characters followed by *geresh* (for single digits) or *gershayim* (for multi-digit numeric expressions)
-- other indications of accent (*ole*, *raphe*, *metheg*, *athnah*), vowel pointing (*niqqud*) and consonants form lexical tokens
 
