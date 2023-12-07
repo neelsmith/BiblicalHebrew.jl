@@ -1,12 +1,21 @@
+"Unicode codepoint for bet as a `Char`."
 const bet_ch = Char(0x000005d1)
+"Unicode codepoint for gimel as a `Char`."
 const gimel_ch = Char(0x000005d2)
+"Unicode codepoint for dalet as a `Char`."
 const dalet_ch = Char(0x000005d3)
+"Unicode codepoint for final kaph as a `Char`."
 const kaph_final_ch = Char(0x000005da)
+"Unicode codepoint for kaph as a `Char`."
 const kaph_ch = Char(0x000005db)
+"Unicode codepoint for final pe as a `Char`."
 const pe_final_ch = Char(0x000005e3)
+"Unicode codepoint for pe as a `Char`."
 const pe_ch = Char(0x000005e4)
+"Unicode codepoint for tav as a `Char`."
 const tav_ch = Char(0x000005ea)
 
+"Vector of the begadhkephat letters as `Char`s."
 const begadhkephat = [bet_ch, gimel_ch, dalet_ch, kaph_final_ch, kaph_ch, pe_final_ch, pe_ch, tav_ch]
 
 
@@ -39,8 +48,9 @@ const metheg_ch = Char(0x000005bd)
 # raphe
 # athnah
 
-
+"Unicode codepoint for dagesh as a `Char`."
 const dagesh_ch = Char(0x000005bc)
+"Unicode codepoint for mappiq as a `Char`."
 const mappiq_ch = Char(0x000005bc) # Yes, they're the same Unicode code point!
 
 

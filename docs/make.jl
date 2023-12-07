@@ -10,13 +10,15 @@ using Pkg
 Pkg.activate(".")
 Pkg.instantiate()
 
-using Documenter, DocStringExtensions
+using Documenter, DocStringExtensions, Hebrew
 
 
 makedocs(
     sitename="Hebrew.jl",
     pages = [
             "User's guide" => "index.md",  
+            "API" => "apis.md",
+            "Comprehensive autodocs" => "auto.md"
     ],
     )
 

@@ -13,7 +13,7 @@ using Documenter, DocStringExtensions
 
 export HebrewOrthography
 
-include("utils.jl")
+include("char_utils.jl")
 
 include("consts.jl")
 include("codepoints.jl")

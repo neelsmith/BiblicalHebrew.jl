@@ -1,24 +1,4 @@
-"""Split string `s` into substrings separated by character `c`;
-if `keep` is true, also maintain `c` as a string in the resulting list.
-"""
-function codept_split(s, c::Char; keep = true)
-    results = String[]
-    current = Char[]
-    for ch in s
-        if ch == c
-            if ! isempty(current) 
-                push!(results, join(current))
-            end
-            if keep
-                push!(results, string(ch))
-            end
-            current = []
-        else
-            push!(current, ch)
-        end
-    end
-    results
-end
+
 """
 An orthographic system for encoding Hebrew in Unicode.
 """    
