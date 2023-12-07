@@ -1,13 +1,34 @@
+```@setup moreortho
+using Hebrew
+```
 # Other functions for working with Hebrew orthography
 
 
+The package includes a number of functions to simplify working with the orthography of Biblical Hebrew.
 
-## Other orthography functions
+Find the Unicode label for a codepoint.
 
-Includes orthography functions to:
+```@example moreortho
+ch = 'ד'
+Hebrew.codept_name(ch)
+```
 
+Reduce a string to a consonantal representation by stripping off accents and vocalization markings.
 
-- identify codepoints as consonantal, niqqud, accent or punctuation
-- strip away context-dependent accent markings (*athnah*)
-- strip a string down to consonants and punctuation only
-- label codepoints with Unicode text label
+!!! note "Verifying output"
+    The font used by Julia's `Documenter` package does not display these additional codepoints, so we will verify that they in fact are present in the original string by checking the list of codepoints present.
+
+Original pointed string:
+
+```@example moreortho
+s1 = "הַדְּבָרִ֗ים"
+collect(s1) .|> codepoint .|> Char
+```
+
+Consonantal reduction:
+
+```@example moreortho
+stripped = Hebrew.unpointed(s1)
+collect(stripped) .|> codepoint .|> Char
+```
+

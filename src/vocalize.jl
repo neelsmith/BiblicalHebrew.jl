@@ -20,10 +20,35 @@ function seghol(s)
     string(s, seghol_ch)
 end
 
+
+"""Add hiriq to string `s`."""
+function hiriq(s)
+    string(s, hiriq_ch)
+end
+
+"""Add tsere to string `s`."""
+function tsere(s)
+    string(s, tsere_ch)
+end
+
+"""Add qubbuts to string `s`."""
+function qubbuts(s)
+    string(s,qubbuts_ch)
+end
+
+
+"""Add holam to string `s`."""
+function holam(s)
+    string(s,holam_ch)
+end
+
+
+
 """Add sheva to string `s`."""
 function sheva(s)
     string(s, sheva_ch)
 end
+
 
 
 ## Accents and combining punctuation

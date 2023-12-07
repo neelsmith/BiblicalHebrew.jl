@@ -31,16 +31,20 @@ const gutturals = [aleph_ch, he_ch, het_ch, ayin_ch]
 const qamats_ch = Char(0x000005b8)
 const patah_ch = Char(0x000005b7)
 const seghol_ch = Char(0x000005b6)
+
+const hiriq_ch = Char(0x000005b4)
+const tsere_ch = Char(0x000005b5)
+const qubbuts_ch = Char(0x000005bb)
+const holam_ch = Char(0x000005b9)
+
 const sheva_ch = Char(0x000005b0)
-# hireq
-# tsere
-# qibbuts
-# holem
 
-#= const nequddot = [
-
+const nequddot = [
+    qamats_ch, patah_ch, seghol_ch, 
+    hiriq_ch, tsere_ch,qubbuts_ch, holam_ch,
+    sheva_ch   
 ]
-=#
+
 
 
 const ole_ch = Char(0x000005ab) 

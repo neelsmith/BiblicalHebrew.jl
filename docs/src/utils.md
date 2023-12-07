@@ -1,7 +1,4 @@
-# APIs
-
-
-## Generic utilities for working with strings and characters
+# Generic utilities for working with strings and characters
 
 ```@docs
 Hebrew.codept

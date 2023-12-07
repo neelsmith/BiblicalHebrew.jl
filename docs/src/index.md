@@ -1,7 +1,8 @@
 # Hebrew.jl
 
+## The `OrthographicSystem` interface
 
-The type `HebrewOrthography` implements the `OrthographicSystem` interface of the `Orthography` package for Biblical Hebrew texts using the Hebrew range of Unicode.  (For more information about the Julia `Orthography` package, see [its documentation](https://hcmid.github.io/Orthography.jl/stable/)).
+The type `HebrewOrthography` implements the `OrthographicSystem` interface (from the `Orthography` package) for Biblical Hebrew texts written with the Hebrew range of Unicode.  (For more information about the Julia `Orthography` package, see [its documentation](https://hcmid.github.io/Orthography.jl/stable/)).
 
 Create a `HebrewOrthography` object and use it to get metadata about the orthography, to validate strings, and to tokenize strings.
 
@@ -11,7 +12,7 @@ ortho = HebrewOrthography()
 ```
 
 !!! warning "Limitations in Documenter's Unicode display"
-    Many code points in the Hebrew range of Unicode don't display at all in the font used by Julia's `Documenter` package.  These include all the vowel pointing (*niqqud*), and many of the punctUation and accent marks.  All the code examples in this documentation produce output with fully pointed and accented Hebrew, even if it is not displayed legibly here.
+    Many code points in the Hebrew range of Unicode don't display at all in the font used by Julia's `Documenter` package.  These include all the vowel pointing (*niqqud*), and many of the punctuation and accent marks.  All the code examples in this documentation produce output with fully pointed and accented Hebrew, even if it is not displayed legibly here.
 
 
 
@@ -58,7 +59,8 @@ maqaf_string =  tokens[2].text
 maqaf_string[1] |> codepoint
 ```
 
-Numeric tokens are followed by *gershe* or *gershayim*. The following example uses a named character constant, and appends a *gershe* to it using the package's `gershe` function to compose a string for the numeric value 1.
+Numeric tokens are followed by *gershe* or *gershayim*. To compose a string for the numeric value 1, the following example passes a named character constant as a parameter to the package's `gershe` function to append a *gershe* to it.
+
 
 ```@example tour
 aleph = string(Hebrew.aleph_ch)
