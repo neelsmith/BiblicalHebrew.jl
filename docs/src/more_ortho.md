@@ -13,10 +13,7 @@ ch = 'ד'
 BiblicalHebrew.codept_name(ch)
 ```
 
-Reduce a string to a consonantal representation by stripping off accents and vocalization markings.
-
-!!! note "Verifying output"
-    The font used by Julia's `Documenter` package does not display these additional codepoints, so we will verify that they in fact are present in the original string by checking the list of codepoints present.
+Reduce a string to a consonantal representation by stripping off accents and vocalization markings. Since the font used by Julia's `Documenter` package does not display these additional codepoints, we will verify that they in fact are present by checking the list of codepoints in the string.
 
 Original pointed string:
 

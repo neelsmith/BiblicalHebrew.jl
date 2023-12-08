@@ -16,7 +16,7 @@ ortho = HebrewOrthography()
 
 
 
-## Valid characters
+### Valid characters
 
 All 84 defined codepoints in the Unicode Hebrew range plus four white-space characters (space, `\n`, `\r` and `\n`) are valid in this orthography.
 
@@ -34,7 +34,7 @@ validstring("בֵּֽין־פָּארָ֧ן", ortho)
 validstring("Hi, בֵּֽין־פָּארָ֧ן", ortho)
 ```
 
-## Tokenization
+### Tokenization
 
 
 The orthography can identify three categories of token:
@@ -43,7 +43,7 @@ The orthography can identify three categories of token:
 tokentypes(ortho)
 ```
 
-Tokenization associates a string value with a token category. Since punctuation like *maqaf* doesn't display properly in this documentation, we'll compose a string using the package's `maqaf_join` function to create a construct chain.
+Tokenization associates a string value with a token category. Since punctuation like *maqaf* doesn't display properly in this documentation, we'll use the package's `maqaf_join` function to create a construct chain, then tokenize the resulting string.
 
 ```@example tour
 s1 = "בֵּֽין"
@@ -52,7 +52,7 @@ construct = BiblicalHebrew.maqaf_join([s1,s2])
 tokens = tokenize(construct, ortho)
 ```
 
-Even if we can't see the *maqaf* in the resulting display, we can verify that the text value of punctuation token in this example in fact has the correct string by checking that its Unicode codepoint is in fact `05be`, the *maqaf*.
+Even if we can't see the *maqaf* in the resulting display, we can verify that the text value of the punctuation token in this example in fact is the Unicode codepoint  `05be`, the *maqaf*.
 
 ```@example tour
 maqaf_string =  tokens[2].text
@@ -60,7 +60,6 @@ maqaf_string[1] |> codepoint
 ```
 
 Numeric tokens are followed by *gershe* or *gershayim*. To compose a string for the numeric value 1, the following example passes a named character constant as a parameter to the package's `gershe` function to append a *gershe* to it.
-
 
 ```@example tour
 aleph = string(BiblicalHebrew.aleph_ch)

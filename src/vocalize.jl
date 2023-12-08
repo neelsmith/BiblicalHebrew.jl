@@ -14,12 +14,10 @@ function patah(s)
     string(s, patah_ch)
 end
 
-
 """Add seghol to string `s`."""
 function seghol(s)
     string(s, seghol_ch)
 end
-
 
 """Add hiriq to string `s`."""
 function hiriq(s)
@@ -36,13 +34,10 @@ function qubbuts(s)
     string(s,qubbuts_ch)
 end
 
-
 """Add holam to string `s`."""
 function holam(s)
     string(s,holam_ch)
 end
-
-
 
 """Add sheva to string `s`."""
 function sheva(s)
@@ -73,7 +68,7 @@ function gershe(s)
     string(s, gershe_ch)
 end
 
-"""Connect a list of tokens together with `maqaf`."""
+"""Connect a list of tokens together with *maqaf*."""
 function maqaf_join(v)
     join(v, maqaf_ch)
 end
