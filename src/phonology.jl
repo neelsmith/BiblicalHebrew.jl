@@ -7,10 +7,10 @@ function isguttural(s)
 end
 
 
-"""True if initial consonant of `s` is a consonant in the begadhkephat."""
-function is_begadhkephat(s)
+"""True if initial consonant of `s` is a consonant in the begadkephat."""
+function is_begadkephat(s)
     chars = collect(s)
-    chars[1] in begadhkephat
+    chars[1] in begadkephat
 end
 
 """Add dagesh to string `s`."""

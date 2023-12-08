@@ -19,9 +19,9 @@ end
 
 
 """Tokenize a string `s` where `s` has already
-isolated the token separators maqaf and soph pasuq.
+isolated the token separators *maqaf* and *soph pasuq*.
 This can be accomplished by feeding `s` to the `tokenize` function
-with a `HebrewOrthograph`.
+with a `HebrewOrthography`.
 """
 function tokenize_string(s, o::HebrewOrthography = HebrewOrthography())
     results = OrthographicToken[]
@@ -49,7 +49,7 @@ function tokenize_string(s, o::HebrewOrthography = HebrewOrthography())
     results
 end
 
-"""Implement Orthography's codepoints functions for LiteraryGreekOrthography.
+"""Implement `Orthography`'s codepoints functions for `HebrewOrthography`.
 
 $(SIGNATURES)    
 """    
@@ -57,7 +57,7 @@ function codepoints(ortho::HebrewOrthography)
     vcat(ws_chars(), hebrew_chars())
 end
 
-"""Implement Orthography's tokentypes functions for LiteraryGreekOrthography.
+"""Implement Orthography's tokentypes functions for `HebrewOrthography`.
 
 $(SIGNATURES)    
 """    
