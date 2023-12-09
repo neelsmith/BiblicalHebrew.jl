@@ -1,5 +1,6 @@
 ```@setup moreortho
 using BiblicalHebrew
+using Markdown
 ```
 # Other functions for working with Hebrew orthography
 
@@ -19,13 +20,14 @@ Original pointed string:
 
 ```@example moreortho
 s1 = "הַדְּבָרִ֗ים"
-collect(s1) .|> codepoint .|> Char
+Markdown.parse("> s1 = $(s1)")
+
 ```
 
 Consonantal reduction:
 
 ```@example moreortho
 stripped = BiblicalHebrew.unpointed(s1)
-collect(stripped) .|> codepoint .|> Char
+Markdown.parse("> Value of stripped is " * stripped)
 ```
 
