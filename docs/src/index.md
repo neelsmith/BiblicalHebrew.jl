@@ -73,6 +73,10 @@ Numeric tokens are followed by *gershe* or *gershayim*. To compose a string for 
 ```@example tour
 aleph = string(BiblicalHebrew.aleph_ch)
 one = BiblicalHebrew.gershe(aleph)
+Markdown.parse(one)
+```
+
+```@example tour
 tokenize(one, ortho)
 ```
 
