@@ -1,5 +1,5 @@
 ```@setup niqqud
-using BiblicalHebrew
+using BiblicalHebrew, Markdown
 ```
 # *Niqqud*
 
@@ -11,18 +11,7 @@ For example, add a *qamats* to an aleph:
 
 ```@example niqqud
 pointed = BiblicalHebrew.qamats("א")
-```
-
-Check that the combining character has been added:
-
-```@example niqqud
-collect(pointed)
-```
-
-Or view the Unicode name for the code point
-
-```@example niqqud
-collect(pointed) .|> BiblicalHebrew.codept_name
+Markdown.parse("> pointed = " * pointed)
 ```
 
 
@@ -30,19 +19,14 @@ You can of course chain these functions. To compose *hateph* vowels, for example
 
 ```@example niqqud
 hateph_seghol = BiblicalHebrew.sheva("א") |> BiblicalHebrew.seghol
-collect(hateph_seghol)
-```
-
-```@example niqqud
-hateph_seghol = BiblicalHebrew.sheva("א") |> BiblicalHebrew.seghol
-collect(hateph_seghol) .|> BiblicalHebrew.codept_name
+Markdown.parse("> hateph_seghol is " * hateph_seghol)
 ```
 
 There is also a suite of functions for adding accents and other marks, such as *metheg*.
 
 ```@example niqqud
 qamats_metheg = BiblicalHebrew.qamats("א") |> BiblicalHebrew.metheg
-collect(qamats_metheg)
+Markdown.parse("> qamats_metheg is " * qamats_metheg)
 ```
 
 
