@@ -15,18 +15,18 @@ const pe_ch = Char(0x000005e4)
 "Unicode codepoint for tav as a `Char`."
 const tav_ch = Char(0x000005ea)
 
-"Vector of the begadkephat letters as `Char`s."
-const begadkephat = [bet_ch, gimel_ch, dalet_ch, kaph_final_ch, kaph_ch, pe_final_ch, pe_ch, tav_ch]
+"Vector of the begadkepat letters as `Char`s."
+const begadkepat = [bet_ch, gimel_ch, dalet_ch, kaph_final_ch, kaph_ch, pe_final_ch, pe_ch, tav_ch]
+
 
 
 const aleph_ch = Char(0x000005d0)
 const he_ch = Char(0x000005d4)
 const het_ch = Char(0x000005d7)
 const ayin_ch = Char(0x000005e2)
-
 const gutturals = [aleph_ch, he_ch, het_ch, ayin_ch]
 
-
+const consonants = collect(aleph_ch:tav_ch)
 
 const qamats_ch = Char(0x000005b8)
 const patah_ch = Char(0x000005b7)
