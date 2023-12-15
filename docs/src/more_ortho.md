@@ -42,10 +42,29 @@ accented = "בִלְהָ֛ה"
 Markdown.parse("> accented = $(accented)")
 ```
 
-Consonants and vowe points only:
+Consonants and vowel points only:
 
 
 ```@example moreortho
 unaccented = BiblicalHebrew.rm_accents(accented)
 Markdown.parse("> Value of `unaccented` is " * unaccented)
+```
+
+## Test individual characters
+
+Determine if individual characters in a String are consonants or vowe points in Biblical Hebrew.
+
+```@example moreortho
+codepoints = collect(s1)
+BiblicalHebrew.is_consonant(codepoints[1])
+```
+
+```@example moreortho
+BiblicalHebrew.is_vowelpoint(codepoints[1])
+```
+```@example moreortho
+BiblicalHebrew.is_consonant(codepoints[2])
+```
+```@example moreortho
+BiblicalHebrew.is_vowelpoint(codepoints[2])
 ```
