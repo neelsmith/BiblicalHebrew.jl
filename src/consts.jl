@@ -52,10 +52,16 @@ const metheg_ch = Char(0x000005bd)
 # raphe
 # athnah
 
+
+## Also allow these when stripping down to consonants + vowel point representation:
 "Unicode codepoint for dagesh as a `Char`."
 const dagesh_ch = Char(0x000005bc)
 "Unicode codepoint for mappiq as a `Char`."
 const mappiq_ch = Char(0x000005bc) # Yes, they're the same Unicode code point!
+"Unicode codepoint for shin dot as a `Char`."
+const shin_dot_ch = Char(0x000005c1)
+"Unicode codepoint for sin dot as a `Char`."
+const sin_dot_ch = Char(0x000005c2)
 
 
 

@@ -17,6 +17,6 @@
     
     
     s2 = "תִּשְׁלְחוּ"
-    expected_mappiq = "תִּשְלְחוּ"
+    expected_mappiq = "תִּשְׁלְחוּ"
     @test BiblicalHebrew.rm_accents(s2) == expected_mappiq
 end

@@ -1,3 +1,11 @@
+"""True if a Char is a vowel point, a consonant, or one of the three Unicode
+combining characters that are part of writing consonantal values.
+$(SIGNATURES)
+"""
+function is_alphabetic(c::Char)
+    is_consonant(c) || is_vowelpoint(c) || c == mappiq_ch || c == shin_dot_ch || c == sin_dot_ch    
+end
+
 
 """True if Char is a Hebrew consonant.
 $(SIGNATURES)
@@ -53,5 +61,5 @@ same code point in Unicode).
 $(SIGNATURES)
 """
 function rm_accents(s::S) where S <: AbstractString
-    filter(c -> is_consonant(c) || is_vowelpoint(c) || c == mappiq_ch, s)
+    filter(c -> is_alphabetic(c), s)
 end
