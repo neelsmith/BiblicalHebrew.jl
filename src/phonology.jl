@@ -48,9 +48,10 @@ function unpointed(s::S) where S <: AbstractString
 end
 
 """Remove all accents and cantillation marks from a string,
-leaving only consonants vowel points.
+leaving only consonants, vowel points and dagesh/mappiq (the
+same code point in Unicode).
 $(SIGNATURES)
 """
 function rm_accents(s::S) where S <: AbstractString
-    filter(c -> is_consonant(c) || is_vowelpoint(c), s)
+    filter(c -> is_consonant(c) || is_vowelpoint(c) || c == mappiq_ch, s)
 end
