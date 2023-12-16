@@ -19,4 +19,9 @@
     s2 = "תִּשְׁלְחוּ"
     expected_mappiq = "תִּשְׁלְחוּ"
     @test BiblicalHebrew.rm_accents(s2) == expected_mappiq
+
+
+    s3 = "מִצְרָֽיְמָה"
+    expected_metheg = "מִצְרָֽיְמָה"
+    @test BiblicalHebrew.rm_accents(s3) == expected_metheg
 end
