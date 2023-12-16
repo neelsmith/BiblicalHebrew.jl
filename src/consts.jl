@@ -18,7 +18,7 @@ const het_ch = Char(0x000005d7)
 "Unicode codepoint for tet as a `Char`."
 const tet_ch = Char(0x000005d8)
 "Unicode codepoint for yod as a `Char`."
-const yod_ch = Char(0x000005d8)
+const yod_ch = Char(0x000005d9)
 "Unicode codepoint for final kaph as a `Char`."
 const kaph_final_ch = Char(0x000005da)
 "Unicode codepoint for kaph as a `Char`."
@@ -78,6 +78,9 @@ const gutturals = [aleph_ch, he_ch, het_ch, ayin_ch]
 "Vector of all consonants as `Char`s."
 const consonants = collect(aleph_ch:tav_ch)
 
+"Vector of the *matres lectionis* as `Char`s."
+const matres  = [aleph_ch, he_ch, vav_ch, yod_ch]
+
 # Vowel points:
 "Unicode codepoint for qamats as a `Char`."
 const qamats_ch = Char(0x000005b8)
@@ -101,9 +104,7 @@ const metheg_ch = Char(0x000005bd)
 "Vector of all Unicode combining codepoints for vowel markings as `Char`s."
 const nequddot = [
     qamats_ch, patah_ch, seghol_ch, 
-    hiriq_ch, tsere_ch,qubbuts_ch, holam_ch,
-    sheva_ch, 
-    metheg_ch 
+    hiriq_ch, tsere_ch,qubbuts_ch, holam_ch
 ]
 
 # Accents:

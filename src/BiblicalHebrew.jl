@@ -20,6 +20,7 @@ include("codepoints.jl")
 include("phonology.jl")
 include("vocalize.jl")
 include("orthography.jl")
+include("syllables.jl")
 
 
 

@@ -64,15 +64,9 @@ function rm_accents(s::S) where S <: AbstractString
     filter(c -> is_alphabetic(c), s)
 end
 
-
+#=
 function finalize(s::S)  where S <: AbstractString
     grs = graphemes(s)
 
 end
-
-
-
-function syllabify(s::S)  where S <: AbstractString
-    grs = graphemes(s)
-    
-end
+=#
