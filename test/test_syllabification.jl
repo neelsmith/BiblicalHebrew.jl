@@ -1,3 +1,12 @@
+@testset "Identify matres lectionis" begin
+    syll =  "רָ֣א"
+    @test BiblicalHebrew.is_mater(syll)
+end
+
+@testset "Test syllable length" begin
+    
+end
+
 @testset "Test syllabification" begin
     desert = "מִדְבָּר"
     desert_sylls = BiblicalHebrew.syllabify(desert)
@@ -9,19 +18,20 @@
     @test length(house_sylls) == 1
     @test house_sylls == [house]
 
- #=
+
     # Vocal sheva:
     s1 = "שְׁמוֹ"
     s1_sylls = BiblicalHebrew.syllabify(s1)
-    @test_broken length(s1_sylls) == 2
-   
+    @test length(s1_sylls) == 2 
     s2 = "שֹׁמְרִימ"
-    @test_broken length(BiblicalHebrew.syllabify(s2)) == 3
+    @test length(BiblicalHebrew.syllabify(s2)) == 3
+
     # Silent sheva:
     s3 = "יִשְׁמֹר"
-    @test_broken length(BiblicalHebrew.syllabify(s3)) == 2
+    @test length(BiblicalHebrew.syllabify(s3)) == 2
     s4 = "אַפְקִד"
-    @test_broken length(BiblicalHebrew.syllabify(s4)) == 2
+    @test length(BiblicalHebrew.syllabify(s4)) == 2
+
     s5 = "יִשְׁמְריּ"
     @test_broken length(BiblicalHebrew.syllabify(s5)) == 3
     s6 = "אֶקְתְליּ"
@@ -30,7 +40,7 @@
     # Sheva with dagesh forte is vocal:
     s7 = "קִטְּלוּ"
     @test_broken length(BiblicalHebrew.syllabify(s7)) == 3
-=#
+
 end
 
 

@@ -61,7 +61,7 @@ same code point in Unicode).
 $(SIGNATURES)
 """
 function rm_accents(s::S) where S <: AbstractString
-    filter(c -> is_alphabetic(c), s)
+    filter(c -> is_alphabetic(c) || c == sheva_ch, s)
 end
 
 #=
