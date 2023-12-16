@@ -1,9 +1,9 @@
-"""True if a Char is a vowel point, a consonant, or one of the three Unicode
+"""True if a Char is a vowel point, a consonant, or one of the Unicode
 combining characters that are part of writing consonantal values.
 $(SIGNATURES)
 """
 function is_alphabetic(c::Char)
-    is_consonant(c) || is_vowelpoint(c) || c == mappiq_ch || c == shin_dot_ch || c == sin_dot_ch    
+    is_consonant(c) || is_vowelpoint(c) || c == mappiq_ch || c == shin_dot_ch || c == sin_dot_ch 
 end
 
 

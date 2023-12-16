@@ -19,36 +19,49 @@ const tav_ch = Char(0x000005ea)
 const begadkepat = [bet_ch, gimel_ch, dalet_ch, kaph_final_ch, kaph_ch, pe_final_ch, pe_ch, tav_ch]
 
 
-
+"Unicode codepoint for aleph as a `Char`."
 const aleph_ch = Char(0x000005d0)
+"Unicode codepoint for he as a `Char`."
 const he_ch = Char(0x000005d4)
+"Unicode codepoint for het as a `Char`."
 const het_ch = Char(0x000005d7)
+"Unicode codepoint for ayin as a `Char`."
 const ayin_ch = Char(0x000005e2)
+"Vector of the guttural consonants as `Char`s."
 const gutturals = [aleph_ch, he_ch, het_ch, ayin_ch]
-
+"Vector of all consonants as `Char`s."
 const consonants = collect(aleph_ch:tav_ch)
 
+"Unicode codepoint for qamats as a `Char`."
 const qamats_ch = Char(0x000005b8)
+"Unicode codepoint for patah as a `Char`."
 const patah_ch = Char(0x000005b7)
+"Unicode codepoint for seghol as a `Char`."
 const seghol_ch = Char(0x000005b6)
-
+"Unicode codepoint for hiriq as a `Char`."
 const hiriq_ch = Char(0x000005b4)
+"Unicode codepoint for tsere as a `Char`."
 const tsere_ch = Char(0x000005b5)
+"Unicode codepoint for qubbuts as a `Char`."
 const qubbuts_ch = Char(0x000005bb)
+"Unicode codepoint for holam as a `Char`."
 const holam_ch = Char(0x000005b9)
-
+"Unicode codepoint for sheva as a `Char`."
 const sheva_ch = Char(0x000005b0)
-
+"Unicode codepoint for metheg as a `Char`."
+const metheg_ch = Char(0x000005bd) 
+"Vector of all Unicode combining codepoints for vowel markings as `Char`s."
 const nequddot = [
     qamats_ch, patah_ch, seghol_ch, 
     hiriq_ch, tsere_ch,qubbuts_ch, holam_ch,
-    sheva_ch   
+    sheva_ch, 
+    metheg_ch 
 ]
 
 
-
+"Unicode codepoint for ole accent as a `Char`."
 const ole_ch = Char(0x000005ab) 
-const metheg_ch = Char(0x000005bd) 
+
 # raphe
 # athnah
 
