@@ -47,10 +47,6 @@ end
 
 end
 
-
-
-
-
 @testset "Test tokenizing utilities" begin
     s = "abba"
     @test BiblicalHebrew.codept_split(s, 'b') == ["a", "b", "b", "a"]

@@ -20,7 +20,7 @@ makedocs(
             "Other functions for working with Hebrew orthography" => "more_ortho.md",
             "Working with vowel points (niqqud)" => "niqqud.md",
             "Generic utility functions" => "utils.md",
-            "Comprehensive autodocs" => "autodocs.md"
+            "APIs for all constants and functions" => "autodocs.md"
     ],
     )
 

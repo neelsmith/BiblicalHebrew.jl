@@ -4,14 +4,11 @@ function validcps()
     keys(ucode_names) .|> cp |> sort
 end
 
-"""Remove pointing from `s`."""
-function unpointed(s)
-    Unicode.normalize(s, stripmark = true)
-end
 
-"""Look up Unicode summary name for codepoint."""
+
+"""Look up Unicode summary name for a codepoint in the Hebrew range of Unicode."""
 function codept_name(ch::Char)
     hexval = codepoint(ch) |> hex
-    hexval in keys(ucode_names) ? ucode_names[hexval] : "NOT FOUND: $(ch)"
+    hexval in keys(ucode_names) ? ucode_names[hexval] : "Not in Hebrew range of Unicode: $(ch)"
 end
 
