@@ -1,37 +1,87 @@
+# Named constants for the Unicode codepoints representing consonants:
+"Unicode codepoint for aleph as a `Char`."
+const aleph_ch = Char(0x000005d0)
 "Unicode codepoint for bet as a `Char`."
 const bet_ch = Char(0x000005d1)
 "Unicode codepoint for gimel as a `Char`."
 const gimel_ch = Char(0x000005d2)
 "Unicode codepoint for dalet as a `Char`."
 const dalet_ch = Char(0x000005d3)
+"Unicode codepoint for he as a `Char`."
+const he_ch = Char(0x000005d4)
+"Unicode codepoint for vav as a `Char`."
+const vav_ch = Char(0x000005d5)
+"Unicode codepoint for zayin as a `Char`."
+const zayin_ch = Char(0x000005d6)
+"Unicode codepoint for het as a `Char`."
+const het_ch = Char(0x000005d7)
+"Unicode codepoint for tet as a `Char`."
+const tet_ch = Char(0x000005d8)
+"Unicode codepoint for yod as a `Char`."
+const yod_ch = Char(0x000005d9)
 "Unicode codepoint for final kaph as a `Char`."
 const kaph_final_ch = Char(0x000005da)
 "Unicode codepoint for kaph as a `Char`."
 const kaph_ch = Char(0x000005db)
+"Unicode codepoint for lamed as a `Char`."
+const lamed_ch = Char(0x000005dc)
+"Unicode codepoint for final mem as a `Char`."
+const mem_final_ch = Char(0x000005dd)
+"Unicode codepoint for mem as a `Char`."
+const mem_ch = Char(0x000005de)
+"Unicode codepoint for final nun as a `Char`."
+const nun_final_ch = Char(0x000005df)
+"Unicode codepoint for mem as a `Char`."
+const nun_ch = Char(0x000005e0)
+"Unicode codepoint for samekh as a `Char`."
+const samekh_ch = Char(0x000005e1)
+"Unicode codepoint for ayin as a `Char`."
+const ayin_ch = Char(0x000005e2)
 "Unicode codepoint for final pe as a `Char`."
 const pe_final_ch = Char(0x000005e3)
 "Unicode codepoint for pe as a `Char`."
 const pe_ch = Char(0x000005e4)
+"Unicode codepoint for final tsadi as a `Char`."
+const tsadi_final_ch = Char(0x000005e5)
+"Unicode codepoint for pe as a `Char`."
+const tsadi_ch = Char(0x000005e6)
+"Unicode codepoint for qof as a `Char`."
+const qof_ch = Char(0x000005e7)
+"Unicode codepoint for resh as a `Char`."
+const resh_ch = Char(0x000005e8)
+"Unicode codepoint for sin/shin grapheme as a `Char`."
+const sin_shin_ch = Char(0x000005e9)
 "Unicode codepoint for tav as a `Char`."
 const tav_ch = Char(0x000005ea)
+
+## Allow these characters when stripping down to consonants + vowel point representation:
+"Unicode codepoint for dagesh as a `Char`."
+const dagesh_ch = Char(0x000005bc)
+"Unicode codepoint for mappiq as a `Char`."
+const mappiq_ch = Char(0x000005bc) # Yes, they're the same Unicode code point!
+"Unicode codepoint for shin dot as a `Char`."
+const shin_dot_ch = Char(0x000005c1)
+"Unicode codepoint for sin dot as a `Char`."
+const sin_dot_ch = Char(0x000005c2)
+
+"String combining Unicode codepoint for sin/shin with shin dot."
+const shin = string(sin_shin_ch, shin_dot_ch)
+"String combining Unicode codepoint for sin/shin with sin dot."
+const sin = string(sin_shin_ch, sin_dot_ch)
 
 "Vector of the begadkepat letters as `Char`s."
 const begadkepat = [bet_ch, gimel_ch, dalet_ch, kaph_final_ch, kaph_ch, pe_final_ch, pe_ch, tav_ch]
 
-
-"Unicode codepoint for aleph as a `Char`."
-const aleph_ch = Char(0x000005d0)
-"Unicode codepoint for he as a `Char`."
-const he_ch = Char(0x000005d4)
-"Unicode codepoint for het as a `Char`."
-const het_ch = Char(0x000005d7)
-"Unicode codepoint for ayin as a `Char`."
-const ayin_ch = Char(0x000005e2)
 "Vector of the guttural consonants as `Char`s."
 const gutturals = [aleph_ch, he_ch, het_ch, ayin_ch]
+
 "Vector of all consonants as `Char`s."
 const consonants = collect(aleph_ch:tav_ch)
 
+"Vector of the *matres lectionis* as `Char`s."
+const matres  = [aleph_ch, he_ch, vav_ch, yod_ch]
+
+# Vowel points:
 "Unicode codepoint for qamats as a `Char`."
 const qamats_ch = Char(0x000005b8)
 "Unicode codepoint for patah as a `Char`."
@@ -50,37 +100,25 @@ const holam_ch = Char(0x000005b9)
 const sheva_ch = Char(0x000005b0)
 "Unicode codepoint for metheg as a `Char`."
 const metheg_ch = Char(0x000005bd) 
+
 "Vector of all Unicode combining codepoints for vowel markings as `Char`s."
 const nequddot = [
     qamats_ch, patah_ch, seghol_ch, 
-    hiriq_ch, tsere_ch,qubbuts_ch, holam_ch,
-    sheva_ch, 
-    metheg_ch 
+    hiriq_ch, tsere_ch,qubbuts_ch, holam_ch
 ]
 
-
+# Accents:
 "Unicode codepoint for ole accent as a `Char`."
 const ole_ch = Char(0x000005ab) 
-
 # raphe
 # athnah
 
 
-## Also allow these when stripping down to consonants + vowel point representation:
-"Unicode codepoint for dagesh as a `Char`."
-const dagesh_ch = Char(0x000005bc)
-"Unicode codepoint for mappiq as a `Char`."
-const mappiq_ch = Char(0x000005bc) # Yes, they're the same Unicode code point!
-"Unicode codepoint for shin dot as a `Char`."
-const shin_dot_ch = Char(0x000005c1)
-"Unicode codepoint for sin dot as a `Char`."
-const sin_dot_ch = Char(0x000005c2)
-
-
-
 
 # For marking numbers:
+"Unicode codepoint for single number marker *gershe* as a `Char`."
 const gershe_ch = Char(0x000005f3) 
+"Unicode codepoint for multiple-digit number marker *gershayim* as a `Char`."
 const gershayim_ch = Char(0x000005f4) 
 
 # Token breakers:
@@ -163,7 +201,6 @@ ucode_names = Dict(
     "5dd" => "final mem",
     "5de" => "mem",
     "5df" => "final nun",
-
     "5e0" => "nun",
     "5e1" => "samekh",
     "5e2" => "ayin",
@@ -178,6 +215,5 @@ ucode_names = Dict(
 
     "5f3" => "geresh",
     "5f4" => "gershayim"
-    
 
 )

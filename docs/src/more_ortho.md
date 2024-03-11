@@ -68,3 +68,14 @@ BiblicalHebrew.is_consonant(codepoints[2])
 ```@example moreortho
 BiblicalHebrew.is_vowelpoint(codepoints[2])
 ```
+
+## TBA: EXPANDED CHARACTER TESTING
+
+- all alphabetic have named constants
+- is_consonant, is_vowel, is_sheva
+- is_guttural
+
+Vectors:
+- matres
+- 
+
