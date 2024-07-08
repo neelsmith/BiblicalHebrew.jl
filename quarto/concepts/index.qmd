@@ -3,4 +3,4 @@ title: Concepts
 ---
 
 
-Grok orthography.
+The type `HebrewOrthography` implements the `OrthographicSystem` interface (from the `Orthography` package) for Biblical Hebrew texts written with the Hebrew range of Unicode.  (For more information about the Julia `Orthography` package, see [its documentation](https://hcmid.github.io/Orthography.jl/stable/)).

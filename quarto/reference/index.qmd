@@ -6,13 +6,13 @@ Look it up here.
 
 
 
-`f` 
+`HebrewOrthography` 
 
 :::{.callout-note appearance="minimal"}
 ```{julia}
 #| echo: false
 #| warning: false
-using YourPackage
-@doc f
+using BiblicalHebrew
+@doc HebrewOrthography
 ```
 :::

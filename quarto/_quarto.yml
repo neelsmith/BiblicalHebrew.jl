@@ -43,6 +43,8 @@ website:
     - title: "Tutorials"
       contents: 
         - tutorials/index.qmd
+        - tutorials/quickstart.qmd
+        
 
     - title: "Guides"
       contents:
