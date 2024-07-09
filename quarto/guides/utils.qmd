@@ -1,8 +1,7 @@
-# Utilities
+# Utilities for working with character values
 
 
-
-Even in the twenty-first century, it can be awkward in some environments to display codepoints in the Hebrew range of Unicode.  The package includes a few shortcuts for viewing different representations of codepoints that (although generic) are sometimes  especially useful when working with fully pointed Hebrew text.
+The `BiblicalHebrew` package includes a few shortcuts for viewing different representations of codepoints that, although generic, can be useful when working with fully pointed Hebrew text.
 
 
 ## Some Unicode basics
@@ -16,7 +15,7 @@ graphemev = graphemes(desert) |> collect
 ```
 
 
-We can use `collect` on string types to gather a vector of `Char`s.
+We can use `collect` on string values to gather a vector of `Char`s.
 
 ```{julia}
 charv = collect(graphemev[1])
@@ -33,13 +32,12 @@ using BiblicalHebrew
 BiblicalHebrew.codepoint.(charv)
 ```
 
-::: {.callout-tip tite="Signed and unsigned integers"}
 These are unsigned integers.  If you want signed integers, you can construct signed integers directly from them:
 
 ```{julia}
 BiblicalHebrew.codepoint.(charv) .|> Int64
 ```
-:::
+
 
 
 So these are tautologies:
@@ -68,7 +66,7 @@ charv  .|> BiblicalHebrew.codepoint  .|> BiblicalHebrew.hex
 
 
 ```{julia}
-charv  .|> BiblicalHebrew.codepoint .|> BiblicalHebrew.hex
+charv  .|> BiblicalHebrew.codepoint .|> Int64 .|> BiblicalHebrew.hex
 ```
 
 And `BiblicalHebrew.int` converts a hex string into an integer value.
@@ -80,7 +78,7 @@ charv  .|> BiblicalHebrew.codepoint  .|> BiblicalHebrew.hex .|> BiblicalHebrew.i
 So this is also a tautology:
 
 ```{julia}
-(BiblicalHebrew.codepoint.(charv) .|> BiblicalHebrew.hex .|> BiblicalHebrew.int ) == codepoint.(charv)
+codepoint.(charv) == BiblicalHebrew.codepoint.(charv) .|> BiblicalHebrew.hex .|> BiblicalHebrew.int 
 ```
 
 
@@ -89,17 +87,17 @@ So this is also a tautology:
 
 `BiblicalHebrew.codept_split` works like Julia's `split` function, but by default keeps the separating character value;
 
-```julia
+```{julia}
 split(desert, charv[2])
 ```
 
-```julia
+```{julia}
 BiblicalHebrew.codept_split(desert, charv[2])
 ```
 
 You can override that behavior:
 
-```julia
+```{julia}
 BiblicalHebrew.codept_split(desert, charv[2]; keep = false)
 ```
 

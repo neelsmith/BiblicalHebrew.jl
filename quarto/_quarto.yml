@@ -5,7 +5,7 @@ theme: spacelab
 execute:
   freeze: auto
 date: last-modified  
-margin-header: "⚠️ *Draft in progress: converting content from previous documentation.*\n\nBuilt with package version `0.3.4`"
+margin-header: "Built with package version `0.3.4`"
 format:
   html: 
     toc: true

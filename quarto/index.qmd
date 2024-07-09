@@ -6,7 +6,7 @@ title: "BiblicalHebrew"
 
 ## Contents
 
-| | Learning `BiblicalHebrew` | Using the package |
+| | Learning the `BiblicalHebrew` package | Using the package |
 | --- | --- | --- |
-| **Hands-on** |   [Start with a tutorial](./tutorials/)  | Find [recipes](./guides/) for specific tasks |
-| **Cognition** | Learn about the [concepts](./concepts/) underlying this package   | See [API documentation and other reference information](./reference/)  |
+| **Hands-on** |   Start with [a tutorial](./tutorials/)  | Find [recipes](./guides/) for specific tasks |
+| **Cognition** | [Concepts](./concepts/) underlying the package   | See [API documentation](./reference/)  |
