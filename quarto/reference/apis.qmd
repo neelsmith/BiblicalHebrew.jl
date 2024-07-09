@@ -27,14 +27,14 @@ using BiblicalHebrew
 :::
 
 
-BiblicalHebrew.codept_split
+`BiblicalHebrew.codept_split`
 
 
 :::{.callout-note appearance="minimal"}
 ```{julia}
 #| echo: false
 #| warning: false
-@doc BiblicalHebrew.codept_name
+@doc BiblicalHebrew.codept_split
 ```
 :::
 

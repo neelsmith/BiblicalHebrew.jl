@@ -51,6 +51,12 @@ website:
     - title: "Guides"
       contents:
         - guides/index.qmd
+        - text: "---"        
+        - guides/niqqud.qmd        
+        - guides/more_ortho.qmd
+        - guides/syllabification.qmd
+        - guides/utils.qmd
+
 
     - title: "Reference"
       contents: 
@@ -58,11 +64,7 @@ website:
         - text: "---"
         - reference/constants.qmd
         - reference/apis.qmd
-        - text: "---"        
-        - reference/niqqud.qmd
-        - reference/more_ortho.qmd
-        - reference/syllabification.qmd
-        - reference/utils.qmd
+
 
     - title: "Concepts"
       contents: 
