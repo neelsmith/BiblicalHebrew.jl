@@ -6,10 +6,13 @@ Convenience functions for:
 =#
 
 """Find hexadecimal string for an integer."""
+function hex(i::Int)
+    string(i, base = 16)
+end
+"""Find hexadecimal string for an integer."""
 function hex(i::UInt32)
     string(i, base = 16)
 end
-
 
 """Compose hexadecimal string for integer value of `ch`."""
 function hex(ch::Char)

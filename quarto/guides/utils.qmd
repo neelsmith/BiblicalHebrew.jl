@@ -1,15 +1,101 @@
 # Utilities
 
-```{julia}
-using BiblicalHebrew, Unicode
-desert = "מִדְבָּר"
-```
+
 
 Even in the twenty-first century, it can be awkward in some environments to display codepoints in the Hebrew range of Unicode.  The package includes a few shortcuts for viewing different representations of codepoints that (although generic) are sometimes  especially useful when working with fully pointed Hebrew text.
 
 
+## Some Unicode basics
+
+The Unicode package's `graphemes` function iterates through the graphemes in a string.  If we apply it to the string "מִדְבָּר" and collect the results into a vector, the vector will have four elements, one for each consonant together with any associated points such as vowel points or dagesh.
+
+```{julia}
+using Unicode
+desert = "מִדְבָּר"
+graphemev = graphemes(desert) |> collect
+```
 
 
+We can use `collect` on string types to gather a vector of `Char`s.
+
+```{julia}
+charv = collect(graphemev[1])
+```
+
+
+
+## Codepoints, integers and hexadecimal strings
+
+`BiblicalHebrew.codepoint` gives the integer value of a character.
+
+```{julia}
+using BiblicalHebrew
+BiblicalHebrew.codepoint.(charv)
+```
+
+::: {.callout-tip tite="Signed and unsigned integers"}
+These are unsigned integers.  If you want signed integers, you can construct signed integers directly from them:
+
+```{julia}
+BiblicalHebrew.codepoint.(charv) .|> Int64
+```
+:::
+
+
+So these are tautologies:
+
+```{julia}
+(BiblicalHebrew.codepoint.(charv) .|> Char) == 
+(BiblicalHebrew.codepoint.(charv) .|> Int64 .|> Char) == charv
+```
+
+Julia's `string` function displays integers in decimal notation.
+
+```{julia}
+BiblicalHebrew.codepoint.(charv) .|> string
+```
+
+
+`BiblicalHebrew.hex` gets a hex string for codepoints, integers or characters:
+
+```{julia}
+charv .|> BiblicalHebrew.hex
+```
+
+```{julia}
+charv  .|> BiblicalHebrew.codepoint  .|> BiblicalHebrew.hex
+```
+
+
+```{julia}
+charv  .|> BiblicalHebrew.codepoint .|> BiblicalHebrew.hex
+```
+
+And `BiblicalHebrew.int` converts a hex string into an integer value.
+
+```{julia}
+charv  .|> BiblicalHebrew.codepoint  .|> BiblicalHebrew.hex .|> BiblicalHebrew.int
+```
+
+So this is also a tautology:
+
+```{julia}
+(BiblicalHebrew.codepoint.(charv) .|> BiblicalHebrew.hex .|> BiblicalHebrew.int ) == codepoint.(charv)
+```
+
+
+## Splitting up sequences of codepoints
+
+julia> BiblicalHebrew.codept_split(desert, charv[2])
+3-element Vector{String}:
+ "מ"
+ "ִ"
+ "דְבָּר"
+
+julia> BiblicalHebrew.codept_split(desert, charv[2]; keep = false)
+2-element Vector{String}:
+ "מ"
+ "דְבָּר
 
 ## APIs
 
