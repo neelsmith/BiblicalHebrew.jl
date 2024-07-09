@@ -28,248 +28,455 @@ using BiblicalHebrew
 
 
 BiblicalHebrew.codept_split
-—
-Method
-Split string s into substrings separated by character c; if keep is true, also maintain c as a string in the resulting list.
-source
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.codept_name
+```
+:::
+
 BiblicalHebrew.dagesh
-—
-Method
-Add dagesh to string s.
 
-dagesh(s)
 
-source
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.codept_name
+```
+:::
+
 BiblicalHebrew.gershe
-—
-Method
-Append gershe to string s.
-source
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.codept_name
+```
+:::
+
+
+
 BiblicalHebrew.has_sheva
-—
-Method
-True if a syllable has a sheva.
 
-has_sheva(s)
 
-source
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.codept_name
+```
+:::
+
+
+
 BiblicalHebrew.has_vowelpoint
-—
-Method
-True if a grapheme (a String value) has a vowel point.
 
-has_vowelpoint(s)
 
-source
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.codept_name
+```
+:::
+
+
+
 BiblicalHebrew.hebrew_chars
-—
-Method
-Compose a list of all defined characters in the Hebrew range of Unicode as Chars, sorted in Unicode order.
-source
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.codept_name
+```
+:::
+
+
 BiblicalHebrew.hex
-—
-Method
-Compose hexadecimal string for integer value of ch.
-source
-BiblicalHebrew.hex
-—
-Method
-Find hexadecimal string for an integer.
-source
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.codept_name
+```
+:::
+
+
 BiblicalHebrew.hiriq
-—
-Method
-Add hiriq to string s.
-source
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.codept_name
+```
+:::
+
+
 BiblicalHebrew.holam
-—
-Method
-Add holam to string s.
-source
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.codept_name
+```
+:::
+
+
 BiblicalHebrew.int
-—
-Method
-Find integer value of a hexadecimal string.
-source
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.codept_name
+```
+:::
+
+
 BiblicalHebrew.is_alphabetic
-—
-Method
-True if a Char is a vowel point, a consonant, or one of the Unicode combining characters that are part of writing consonantal values.
 
-is_alphabetic(c)
 
-source
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.codept_name
+```
+:::
+
+
 BiblicalHebrew.is_begadkepat
-—
-Method
-True if initial consonant of s is a consonant in the begadkepat.
 
-is_begadkepat(s)
 
-source
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.codept_name
+```
+:::
+
+
+
 BiblicalHebrew.is_consonant
-—
-Method
-True if Char is a Hebrew consonant.
 
-is_consonant(c)
 
-source
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.codept_name
+```
+:::
+
+
+
+
 BiblicalHebrew.is_guttural
-—
-Method
-True if String begins with a guttural.
 
-is_guttural(s)
 
-source
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.codept_name
+```
+:::
+
+
+
 BiblicalHebrew.is_long
-—
-Method
-True if a syllable is long.
 
-is_long(s)
 
-source
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.codept_name
+```
+:::
+
+
+
 BiblicalHebrew.is_mater
-—
-Method
-True if a syllable represents a mater lectionis.
 
-is_mater(s)
 
-source
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.codept_name
+```
+:::
+
+
+
 BiblicalHebrew.is_vowelpoint
-—
-Method
-True if Char is a Hebrew vowel point.
 
-is_vowelpoint(c)
 
-source
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.codept_name
+```
+:::
+
+
+
 BiblicalHebrew.mappiq
-—
-Method
-Add mappiq to string s.
-source
+
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.codept_name
+```
+:::
+
+
+
 BiblicalHebrew.maqaf_join
-—
-Method
-Connect a list of tokens together with maqaf.
-source
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.codept_name
+```
+:::
+
 BiblicalHebrew.metheg
-—
-Method
-Add metheg to string s.
-source
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.codept_name
+```
+:::
+
 BiblicalHebrew.ole
-—
-Method
-Add accent ole to string s.
-source
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.codept_name
+```
+:::
+
 BiblicalHebrew.patah
-—
-Method
-Add patah to string s.
-source
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.codept_name
+```
+:::
+
 BiblicalHebrew.qamats
-—
-Method
-Add qamats to string s.
-source
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.codept_name
+```
+:::
+
 BiblicalHebrew.qubbuts
-—
-Method
-Add qubbuts to string s.
-source
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.codept_name
+```
+:::
+
 BiblicalHebrew.reduced_vowel
-—
-Method
-True if a syllable has a reduced vowel.
 
-reduced_vowel(s)
 
-source
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.codept_name
+```
+:::
+
 BiblicalHebrew.rm_accents
-—
-Method
-Remove all accents and cantillation marks from a string, leaving only consonants, vowel points and dagesh/mappiq (the same code point in Unicode).
 
-rm_accents(s)
 
-source
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.codept_name
+```
+:::
+
 BiblicalHebrew.seghol
-—
-Method
-Add seghol to string s.
-source
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.codept_name
+```
+:::
+
 BiblicalHebrew.sheva
-—
-Method
-Add sheva to string s.
-source
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.codept_name
+```
+:::
+
 BiblicalHebrew.syllabify
-—
-Method
-Syllabify string.
 
-syllabify(s)
 
-source
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.codept_name
+```
+:::
+
 BiblicalHebrew.tokenize_string
-—
-Function
-Tokenize a string s where s has already isolated the token separators maqaf and soph pasuq. This can be accomplished by feeding s to the tokenize function with a HebrewOrthography.
-source
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.codept_name
+```
+:::
+
 BiblicalHebrew.tsere
-—
-Method
-Add tsere to string s.
-source
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.codept_name
+```
+:::
+
 BiblicalHebrew.unpointed
-—
-Method
-Reduce a string to consonantal representation by removing all pointing and accents.
 
-unpointed(s)
 
-source
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.codept_name
+```
+:::
+
 BiblicalHebrew.validcps
-—
-Method
-Compose a list of all defined codepoints in the Hebrew range of Unicode sorted in codepoint order.
-source
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.codept_name
+```
+:::
+
 BiblicalHebrew.ws_chars
-—
-Method
-Whitespace characters accepted in this orthography
-source
-Orthography.codepoints
-—
-Method
-Implement Orthography's codepoints functions for HebrewOrthography.
 
-codepoints(ortho)
 
-source
-Orthography.tokenize
-—
-Method
-Implement Orthography's tokenize function for HebrewOrthography.
+## Why are all these doc broken?
 
-tokenize(s, o)
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.codept_name
+```
+:::
 
-source
-Orthography.tokentypes
-—
-Method
-Implement Orthography's tokentypes functions for HebrewOrthography.
+`codepoints`
 
-tokentypes(ortho)
 
-source
-Orthography.validstring
-—
-Method
-Implement validstring function for HebrewOrthography. True if every code point in s appears in the HebrewOrthography's values for codepoints.
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc codepoints
+```
+:::
 
+`tokenize`
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc tokenize
+```
+:::
+
+`tokentypes`
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc tokentypes
+```
+:::
+
+`validstring`
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc validstring
+```
+:::
