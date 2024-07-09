@@ -2,10 +2,11 @@
 title: "BiblicalHebrew"
 ---
 
-Concepts and implementation in a Julia interface.
+`BiblicalHebrew` is a Julia package for working with the orthography of Biblical Hebrew.
 
+## Contents
 
-| | Learning the package | Using the package |
+| | Learning `BiblicalHebrew` | Using the package |
 | --- | --- | --- |
-| **Hands-on** |  Try a [tutorial](./tutorials/) to start using  the package  | Find [recipes](./guides/) for specific tasks |
-| **Cognition** | Learn [concepts](./concepts/)   | See [reference information](./reference/) (including API documentation for all exported functions) |
+| **Hands-on** |   [Start with a tutorial](./tutorials/)  | Find [recipes](./guides/) for specific tasks |
+| **Cognition** | Learn about the [concepts](./concepts/) underlying this package   | See [API documentation and other reference information](./reference/)  |
