@@ -86,61 +86,20 @@ So this is also a tautology:
 
 ## Splitting up sequences of codepoints
 
-julia> BiblicalHebrew.codept_split(desert, charv[2])
-3-element Vector{String}:
- "מ"
- "ִ"
- "דְבָּר"
 
-julia> BiblicalHebrew.codept_split(desert, charv[2]; keep = false)
-2-element Vector{String}:
- "מ"
- "דְבָּר
+`BiblicalHebrew.codept_split` works like Julia's `split` function, but by default keeps the separating character value;
 
-## APIs
-
-`BiblicalHebrew.codept`
-
-:::{.callout-note appearance="minimal"}
-```{julia}
-#| echo: false
-#| warning: false
-@doc BiblicalHebrew.codept
+```julia
+split(desert, charv[2])
 ```
-:::
 
-
-
-`BiblicalHebrew.hex`
-
-:::{.callout-note appearance="minimal"}
-```{julia}
-#| echo: false
-#| warning: false
-@doc BiblicalHebrew.hex
+```julia
+BiblicalHebrew.codept_split(desert, charv[2])
 ```
-:::
 
+You can override that behavior:
 
-`BiblicalHebrew.int`
-
-:::{.callout-note appearance="minimal"}
-```{julia}
-#| echo: false
-#| warning: false
-@doc BiblicalHebrew.int
+```julia
+BiblicalHebrew.codept_split(desert, charv[2]; keep = false)
 ```
-:::
-
-
-`BiblicalHebrew.codept_split`
-
-
-:::{.callout-note appearance="minimal"}
-```{julia}
-#| echo: false
-#| warning: false
-@doc BiblicalHebrew.codept_split
-```
-:::
 
