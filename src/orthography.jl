@@ -7,6 +7,7 @@ end
 
 OrthographyTrait(::Type{HebrewOrthography}) = IsOrthographicSystem()
 
+
 """Implement Orthography's tokenize function for HebrewOrthography.
 
 $(SIGNATURES)    

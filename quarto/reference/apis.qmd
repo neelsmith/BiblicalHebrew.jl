@@ -38,143 +38,129 @@ using BiblicalHebrew
 ```
 :::
 
-BiblicalHebrew.dagesh
+`BiblicalHebrew.dagesh`
 
 
 :::{.callout-note appearance="minimal"}
 ```{julia}
 #| echo: false
 #| warning: false
-@doc BiblicalHebrew.codept_name
+@doc BiblicalHebrew.dagesh
 ```
 :::
 
-BiblicalHebrew.gershe
+`BiblicalHebrew.gershe`
 
 
 :::{.callout-note appearance="minimal"}
 ```{julia}
 #| echo: false
 #| warning: false
-@doc BiblicalHebrew.codept_name
-```
-:::
-
-
-
-BiblicalHebrew.has_sheva
-
-
-:::{.callout-note appearance="minimal"}
-```{julia}
-#| echo: false
-#| warning: false
-@doc BiblicalHebrew.codept_name
+@doc BiblicalHebrew.gershe
 ```
 :::
 
 
 
-BiblicalHebrew.has_vowelpoint
+`BiblicalHebrew.has_sheva`
 
 
 :::{.callout-note appearance="minimal"}
 ```{julia}
 #| echo: false
 #| warning: false
-@doc BiblicalHebrew.codept_name
+@doc BiblicalHebrew.has_sheva
 ```
 :::
 
 
 
-BiblicalHebrew.hebrew_chars
+`BiblicalHebrew.has_vowelpoint`
 
 
 :::{.callout-note appearance="minimal"}
 ```{julia}
 #| echo: false
 #| warning: false
-@doc BiblicalHebrew.codept_name
-```
-:::
-
-
-BiblicalHebrew.hex
-
-
-:::{.callout-note appearance="minimal"}
-```{julia}
-#| echo: false
-#| warning: false
-@doc BiblicalHebrew.codept_name
-```
-:::
-
-
-BiblicalHebrew.hiriq
-
-
-:::{.callout-note appearance="minimal"}
-```{julia}
-#| echo: false
-#| warning: false
-@doc BiblicalHebrew.codept_name
-```
-:::
-
-
-BiblicalHebrew.holam
-
-
-:::{.callout-note appearance="minimal"}
-```{julia}
-#| echo: false
-#| warning: false
-@doc BiblicalHebrew.codept_name
-```
-:::
-
-
-BiblicalHebrew.int
-
-
-:::{.callout-note appearance="minimal"}
-```{julia}
-#| echo: false
-#| warning: false
-@doc BiblicalHebrew.codept_name
-```
-:::
-
-
-BiblicalHebrew.is_alphabetic
-
-
-:::{.callout-note appearance="minimal"}
-```{julia}
-#| echo: false
-#| warning: false
-@doc BiblicalHebrew.codept_name
-```
-:::
-
-
-BiblicalHebrew.is_begadkepat
-
-
-
-:::{.callout-note appearance="minimal"}
-```{julia}
-#| echo: false
-#| warning: false
-@doc BiblicalHebrew.codept_name
+@doc BiblicalHebrew.has_vowelpoint
 ```
 :::
 
 
 
-BiblicalHebrew.is_consonant
+`BiblicalHebrew.hebrew_chars`
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.hebrew_chars
+```
+:::
+
+
+`BiblicalHebrew.hex`
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.hex
+```
+:::
+
+
+`BiblicalHebrew.hiriq`
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.hiriq
+```
+:::
+
+
+`BiblicalHebrew.holam`
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.holam
+```
+:::
+
+
+`BiblicalHebrew.int`
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.int
+```
+:::
+
+
+`BiblicalHebrew.is_alphabetic`
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.is_alphabetic
+```
+:::
+
+
+`BiblicalHebrew.is_begadkepat`
 
 
 
@@ -182,14 +168,28 @@ BiblicalHebrew.is_consonant
 ```{julia}
 #| echo: false
 #| warning: false
-@doc BiblicalHebrew.codept_name
+@doc BiblicalHebrew.is_begadkepat
+```
+:::
+
+
+
+`BiblicalHebrew.is_consonant`
+
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.is_consonant
 ```
 :::
 
 
 
 
-BiblicalHebrew.is_guttural
+`BiblicalHebrew.is_guttural`
 
 
 
@@ -197,13 +197,13 @@ BiblicalHebrew.is_guttural
 ```{julia}
 #| echo: false
 #| warning: false
-@doc BiblicalHebrew.codept_name
+@doc BiblicalHebrew.is_guttural
 ```
 :::
 
 
 
-BiblicalHebrew.is_long
+`BiblicalHebrew.is_long`
 
 
 
@@ -211,13 +211,13 @@ BiblicalHebrew.is_long
 ```{julia}
 #| echo: false
 #| warning: false
-@doc BiblicalHebrew.codept_name
+@doc BiblicalHebrew.is_long
 ```
 :::
 
 
 
-BiblicalHebrew.is_mater
+`BiblicalHebrew.is_mater`
 
 
 
@@ -225,13 +225,13 @@ BiblicalHebrew.is_mater
 ```{julia}
 #| echo: false
 #| warning: false
-@doc BiblicalHebrew.codept_name
+@doc BiblicalHebrew.is_mater
 ```
 :::
 
 
 
-BiblicalHebrew.is_vowelpoint
+`BiblicalHebrew.is_vowelpoint`
 
 
 
@@ -239,7 +239,7 @@ BiblicalHebrew.is_vowelpoint
 ```{julia}
 #| echo: false
 #| warning: false
-@doc BiblicalHebrew.codept_name
+@doc BiblicalHebrew.is_vowelpoint
 ```
 :::
 
@@ -253,178 +253,178 @@ BiblicalHebrew.mappiq
 ```{julia}
 #| echo: false
 #| warning: false
-@doc BiblicalHebrew.codept_name
+@doc BiblicalHebrew.mappiq
 ```
 :::
 
 
 
-BiblicalHebrew.maqaf_join
+`BiblicalHebrew.maqaf_join`
 
 
 :::{.callout-note appearance="minimal"}
 ```{julia}
 #| echo: false
 #| warning: false
-@doc BiblicalHebrew.codept_name
+@doc BiblicalHebrew.maqaf_join
 ```
 :::
 
-BiblicalHebrew.metheg
+`BiblicalHebrew.metheg`
 
 
 :::{.callout-note appearance="minimal"}
 ```{julia}
 #| echo: false
 #| warning: false
-@doc BiblicalHebrew.codept_name
+@doc BiblicalHebrew.metheg
 ```
 :::
 
-BiblicalHebrew.ole
+`BiblicalHebrew.ole`
 
 
 :::{.callout-note appearance="minimal"}
 ```{julia}
 #| echo: false
 #| warning: false
-@doc BiblicalHebrew.codept_name
+@doc BiblicalHebrew.ole
 ```
 :::
 
-BiblicalHebrew.patah
+`BiblicalHebrew.patah`
 
 
 :::{.callout-note appearance="minimal"}
 ```{julia}
 #| echo: false
 #| warning: false
-@doc BiblicalHebrew.codept_name
+@doc BiblicalHebrew.patah
 ```
 :::
 
-BiblicalHebrew.qamats
+`BiblicalHebrew.qamats`
 
 
 :::{.callout-note appearance="minimal"}
 ```{julia}
 #| echo: false
 #| warning: false
-@doc BiblicalHebrew.codept_name
+@doc BiblicalHebrew.qamats
 ```
 :::
 
-BiblicalHebrew.qubbuts
+`BiblicalHebrew.qubbuts`
 
 
 :::{.callout-note appearance="minimal"}
 ```{julia}
 #| echo: false
 #| warning: false
-@doc BiblicalHebrew.codept_name
+@doc BiblicalHebrew.qubbuts
 ```
 :::
 
-BiblicalHebrew.reduced_vowel
+`BiblicalHebrew.reduced_vowel`
 
 
 :::{.callout-note appearance="minimal"}
 ```{julia}
 #| echo: false
 #| warning: false
-@doc BiblicalHebrew.codept_name
+@doc BiblicalHebrew.reduced_vowel
 ```
 :::
 
-BiblicalHebrew.rm_accents
+`BiblicalHebrew.rm_accents`
 
 
 :::{.callout-note appearance="minimal"}
 ```{julia}
 #| echo: false
 #| warning: false
-@doc BiblicalHebrew.codept_name
+@doc BiblicalHebrew.rm_accents
 ```
 :::
 
-BiblicalHebrew.seghol
+`BiblicalHebrew.seghol`
 
 
 :::{.callout-note appearance="minimal"}
 ```{julia}
 #| echo: false
 #| warning: false
-@doc BiblicalHebrew.codept_name
+@doc BiblicalHebrew.seghol
 ```
 :::
 
-BiblicalHebrew.sheva
+`BiblicalHebrew.sheva`
 
 
 :::{.callout-note appearance="minimal"}
 ```{julia}
 #| echo: false
 #| warning: false
-@doc BiblicalHebrew.codept_name
+@doc BiblicalHebrew.sheva
 ```
 :::
 
-BiblicalHebrew.syllabify
+`BiblicalHebrew.syllabify`
 
 
 :::{.callout-note appearance="minimal"}
 ```{julia}
 #| echo: false
 #| warning: false
-@doc BiblicalHebrew.codept_name
+@doc BiblicalHebrew.syllabify
 ```
 :::
 
-BiblicalHebrew.tokenize_string
+`BiblicalHebrew.tokenize_string`
 
 
 :::{.callout-note appearance="minimal"}
 ```{julia}
 #| echo: false
 #| warning: false
-@doc BiblicalHebrew.codept_name
+@doc BiblicalHebrew.tokenize_string
 ```
 :::
 
-BiblicalHebrew.tsere
+`BiblicalHebrew.tsere`
 
 
 :::{.callout-note appearance="minimal"}
 ```{julia}
 #| echo: false
 #| warning: false
-@doc BiblicalHebrew.codept_name
+@doc BiblicalHebrew.tsere
 ```
 :::
 
-BiblicalHebrew.unpointed
+`BiblicalHebrew.unpointed`
 
 
 :::{.callout-note appearance="minimal"}
 ```{julia}
 #| echo: false
 #| warning: false
-@doc BiblicalHebrew.codept_name
+@doc BiblicalHebrew.unpointed
 ```
 :::
 
-BiblicalHebrew.validcps
+`BiblicalHebrew.validcps`
 
 
 :::{.callout-note appearance="minimal"}
 ```{julia}
 #| echo: false
 #| warning: false
-@doc BiblicalHebrew.codept_name
+@doc BiblicalHebrew.validcps
 ```
 :::
 
-BiblicalHebrew.ws_chars
+`BiblicalHebrew.ws_chars`
 
 
 ## Why are all these doc broken?
@@ -433,7 +433,7 @@ BiblicalHebrew.ws_chars
 ```{julia}
 #| echo: false
 #| warning: false
-@doc BiblicalHebrew.codept_name
+@doc BiblicalHebrew.ws_chars
 ```
 :::
 
