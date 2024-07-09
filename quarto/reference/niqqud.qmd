@@ -1,4 +1,4 @@
-# *Niqqud*
+# Working with vowel points (*niqqud*)
 
 
 ```{julia}

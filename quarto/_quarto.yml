@@ -58,6 +58,7 @@ website:
         - reference/niqqud.qmd
         - reference/more_ortho.qmd
         - reference/syllabification.qmd
+        - reference/utils.qmd
 
     - title: "Concepts"
       contents: 

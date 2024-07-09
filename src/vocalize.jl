@@ -34,7 +34,9 @@ function qubbuts(s)
     string(s,qubbuts_ch)
 end
 
-"""Add holam to string `s`."""
+"""Add holam to string `s`.
+$(SIGNATURES)
+"""
 function holam(s)
     string(s,holam_ch)
 end
