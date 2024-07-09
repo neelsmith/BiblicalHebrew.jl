@@ -1,15 +1,17 @@
-```@setup moreortho
+
+# Other functions for working with Hebrew orthography
+
+```{julia}
 using BiblicalHebrew
 using Markdown
 ```
-# Other functions for working with Hebrew orthography
 
 
 The package includes a number of functions to simplify working with the orthography of Biblical Hebrew.
 
 Find the Unicode label for a codepoint.
 
-```@example moreortho
+```{julia}
 ch = 'ד'
 BiblicalHebrew.codept_name(ch)
 ```
@@ -21,7 +23,7 @@ Reduce a string to a consonantal representation by stripping off accents and voc
 
 Original pointed string:
 
-```@example moreortho
+```{julia}
 s1 = "הַדְּבָרִ֗ים"
 Markdown.parse("> s1 = $(s1)")
 
@@ -29,7 +31,7 @@ Markdown.parse("> s1 = $(s1)")
 
 Consonantal reduction:
 
-```@example moreortho
+```{julia}
 stripped = BiblicalHebrew.unpointed(s1)
 Markdown.parse("> Value of `stripped` is " * stripped)
 ```
@@ -37,7 +39,7 @@ Markdown.parse("> Value of `stripped` is " * stripped)
 Reduce a string to consonants and vowel points only by stripping off punctuation, accents or other cantillation marks.
 
 
-```@example moreortho
+```{julia}
 accented = "בִלְהָ֛ה"
 Markdown.parse("> accented = $(accented)")
 ```
@@ -45,7 +47,7 @@ Markdown.parse("> accented = $(accented)")
 Consonants and vowel points only:
 
 
-```@example moreortho
+```{julia}
 unaccented = BiblicalHebrew.rm_accents(accented)
 Markdown.parse("> Value of `unaccented` is " * unaccented)
 ```
@@ -54,18 +56,18 @@ Markdown.parse("> Value of `unaccented` is " * unaccented)
 
 Determine if individual characters in a String are consonants or vowe points in Biblical Hebrew.
 
-```@example moreortho
+```{julia}
 codepoints = collect(s1)
 BiblicalHebrew.is_consonant(codepoints[1])
 ```
 
-```@example moreortho
+```{julia}
 BiblicalHebrew.is_vowelpoint(codepoints[1])
 ```
-```@example moreortho
+```{julia}
 BiblicalHebrew.is_consonant(codepoints[2])
 ```
-```@example moreortho
+```{julia}
 BiblicalHebrew.is_vowelpoint(codepoints[2])
 ```
 

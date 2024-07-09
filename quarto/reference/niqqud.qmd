@@ -1,0 +1,177 @@
+# *Niqqud*
+
+
+```{julia}
+using BiblicalHebrew, Markdown
+```
+
+
+The Unicode specification defines combining characters for the Tiberian vowel points (*niqqud*).
+
+The `BiblicalHebrew` package defines character constants that can be used to refer to these values (see the complete list of constants in the section "APIs for all constants and functions" of this documentation. It also offers a parallel suite of functions for composing strings with the vowel points.
+
+For example, add a *qamats* to an aleph:
+
+```{julia}
+pointed = BiblicalHebrew.qamats("א")
+Markdown.parse("> pointed = " * pointed)
+```
+
+
+You can of course chain these functions. To compose *hateph* vowels, for example, use the `sheva` function, then a function for a vowel:
+
+```{julia}
+hateph_seghol = BiblicalHebrew.sheva("א") |> BiblicalHebrew.seghol
+Markdown.parse("> hateph_seghol is " * hateph_seghol)
+```
+
+There is also a suite of functions for adding accents and other marks, such as *metheg*.
+
+```{julia}
+qamats_metheg = BiblicalHebrew.qamats("א") |> BiblicalHebrew.metheg
+Markdown.parse("> qamats_metheg is " * qamats_metheg)
+```
+
+
+## Functions for adding vowel points to strings
+
+
+
+`BiblicalHebrew.qamats`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.qamats
+```
+:::
+
+
+`BiblicalHebrew.patah`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.patah
+```
+:::
+
+
+`BiblicalHebrew.seghol`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.seghol
+```
+:::
+
+`BiblicalHebrew.hiriq`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.hiriq
+```
+:::
+
+`BiblicalHebrew.tsere`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.tsere
+```
+:::
+
+`BiblicalHebrew.qubbuts`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.qubbuts
+```
+:::
+
+`BiblicalHebrew.holam`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc `BiblicalHebrew.holam`
+
+```
+:::
+
+`BiblicalHebrew.sheva`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.sheva
+```
+:::
+
+
+## Other accent marks
+
+
+`BiblicalHebrew.metheg`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.metheg
+```
+:::
+
+`BiblicalHebrew.ole`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.ole
+```
+:::
+
+`BiblicalHebrew.mappiq`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.mappiq
+```
+:::
+
+`BiblicalHebrew.gershe`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.gershe
+```
+:::
+
+`BiblicalHebrew.maqaf_join`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.maqaf_join
+```
+:::
+
+

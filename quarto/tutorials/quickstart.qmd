@@ -8,10 +8,11 @@ using BiblicalHebrew, Orthography
 ortho = HebrewOrthography()
 ```
 
-!!! warning "Limitations in Documenter's Unicode display"
-    Many code points in the Hebrew range of Unicode don't display at all in the font used by Julia's `Documenter` package.  These include all the vowel pointing (*niqqud*), and many of the punctuation and accent marks.  All the code examples in this documentation produce output with fully pointed and accented Hebrew.  Julia's Markdown parser produces normalized content that Documenter can display, so while it may seem odd to apply `Markdown.parse` to a plain string with no markdown content, several examples here do that to make the display of the Hebrew content clearer.
 
+::: {.callout-warning title="Limitations in Documenter's Unicode display"}
 
+Many code points in the Hebrew range of Unicode don't display at all in the font used by Julia's `Documenter` package.  These include all the vowel pointing (*niqqud*), and many of the punctuation and accent marks.  All the code examples in this documentation produce output with fully pointed and accented Hebrew.  Julia's Markdown parser produces normalized content that Documenter can display, so while it may seem odd to apply `Markdown.parse` to a plain string with no markdown content, several examples here do that to make the display of the Hebrew content clearer.
+:::
 
 ### Valid characters
 
@@ -27,7 +28,7 @@ Test whether a string is valid in this orthography:
 validstring("בֵּֽין־פָּארָ֧ן", ortho)
 ```
 
-```@example tour
+```{julia}
 validstring("Hi, בֵּֽין־פָּארָ֧ן", ortho)
 ```
 
