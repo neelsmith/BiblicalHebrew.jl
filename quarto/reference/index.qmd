@@ -5,3 +5,6 @@ title: Reference
 ## API documentation
 
 - [Working with vowel points (*niqqud*)](./niqqud.qmd)
+- Other functions for working with [Hebrew orthography](./more_ortho.qmd)
+- Syllabification (TBA)
+- Some [generic utilities](./utils.qmd) for working with Unicode codepoints
