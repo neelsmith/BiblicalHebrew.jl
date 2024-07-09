@@ -56,6 +56,9 @@ website:
       contents: 
         - reference/index.qmd
         - text: "---"
+        - reference/constants.qmd
+        - reference/apis.qmd
+        - text: "---"        
         - reference/niqqud.qmd
         - reference/more_ortho.qmd
         - reference/syllabification.qmd
