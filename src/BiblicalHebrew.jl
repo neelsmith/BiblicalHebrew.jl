@@ -16,6 +16,8 @@ export HebrewOrthography
 
 export qamats, patah, seghol, hiriq, tsere, qubbuts, holam, sheva
 export metheg
+export dagesh, mappiq
+export gershe
 
 
 export codept_name

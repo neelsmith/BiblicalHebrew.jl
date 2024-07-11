@@ -1,41 +1,70 @@
-# Working with vowel points (*niqqud*)
+# Working with vowel points (*niqqud*) and other marks
 
 
+## Vowels
 
-The Unicode specification defines combining characters for the Tiberian vowel points (*niqqud*).
+The Unicode specification defines combining characters for the Tiberian vowel points (*niqqud*). The `BiblicalHebrew` package defines character constants that can be used to refer to these combining values (), and offers a parallel suite of functions for composing strings with the vowel points.
 
-The `BiblicalHebrew` package defines character constants that can be used to refer to these values (see the complete list of constants in the section "APIs for all constants and functions" of this documentation. It also offers a parallel suite of functions for composing strings with the vowel points.
+
+::: {.callout-note}
+
+For situations where it might be easier to code with character sets such as ASCII or other non-Unicode character sets, the package defines constant names for the consonantal characters of the Hebrew alphabet. (See the [complete list of constants](../reference/constants.qmd) in the reference section of this documentation.) For example:
 
 ```{julia}
 #| warning: false
 using BiblicalHebrew
+BiblicalHebrew.aleph_ch
 ```
+:::
 
-For example, add a *qamats* to an aleph:
+
+For example, add a *qamats* to an aleph character:
 
 ```{julia}
-pointed = qamats("א")
+pointed = qamats('א')
 ```
 
+You can also use these functions to append a vowel point to a string.
+
+```{julia}
+qamats("כְת")
+```
 
 You can of course chain these functions. To compose *hateph* vowels, for example, use the `sheva` function, then a function for a vowel:
 
 ```{julia}
 hateph_seghol = sheva("א") |> seghol
-"hateph_seghol is " * hateph_seghol
 ```
 
-There is also a suite of functions for adding accents and other marks, such as *metheg*.
+There is also a suite of functions for adding cantillation and other marks, such as *metheg*.
 
 ```{julia}
 qamats_metheg = qamats("א") |> metheg
-"qamats_metheg is " * qamats_metheg
 ```
 
+## Other marks
 
-## Functions for adding vowel points to strings
+cantillation or stress: ole
+
+- dagesh and mappiq
+ 
 
 
+```{julia}
+dagesh("ב")
+```
+
+::: {.callout-warning}
+These are identical in Unicode! (They shouldn't be.)
+:::
+
+
+
+
+- numeric: gershe
+
+
+## Summary of functions for adding vowel points to strings
 
 `qamats`
 
@@ -120,7 +149,7 @@ qamats_metheg = qamats("א") |> metheg
 :::
 
 
-## Other accent marks
+## Cantillation and other notation
 
 
 `metheg`
@@ -143,23 +172,23 @@ qamats_metheg = qamats("א") |> metheg
 ```
 :::
 
-`BiblicalHebrew.mappiq`
+`mappiq`
 
 :::{.callout-note appearance="minimal"}
 ```{julia}
 #| echo: false
 #| warning: false
-@doc BiblicalHebrew.mappiq
+@doc mappiq
 ```
 :::
 
-`BiblicalHebrew.gershe`
+`gershe`
 
 :::{.callout-note appearance="minimal"}
 ```{julia}
 #| echo: false
 #| warning: false
-@doc BiblicalHebrew.gershe
+@doc gershe
 ```
 :::
 

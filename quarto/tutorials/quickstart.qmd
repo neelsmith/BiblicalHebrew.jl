@@ -69,3 +69,21 @@ one = BiblicalHebrew.gershe(aleph)
 tokenize(one, ortho)
 ```
 
+
+## check that each of these is covered
+
+
+`codepoints`
+
+`tokenize`
+
+
+
+`tokentypes`
+
+
+
+
+`validstring`
+
+

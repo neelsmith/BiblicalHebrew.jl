@@ -2,10 +2,10 @@
 
 
 ::: {.callout-caution title="Content TBA"}
-TBA
+Syllabification will be the main focus of the next major release.
 :::
 
-## Outlne
+## Outlne of contents in development
 
 - syllabify a word
 - determine vowel length of syllables

@@ -41,6 +41,10 @@ function is_begadkepat(s::S)::Bool where S <: AbstractString
 end
 
 """Add dagesh to string `s`.
+
+
+
+
 $(SIGNATURES)
 """
 function dagesh(s)::String
