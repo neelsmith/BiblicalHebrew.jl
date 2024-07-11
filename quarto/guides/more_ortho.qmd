@@ -33,7 +33,6 @@ Consonantal reduction:
 
 ```{julia}
 stripped = BiblicalHebrew.unpointed(s1)
-Markdown.parse("> Value of `stripped` is " * stripped)
 ```
 
 Reduce a string to consonants and vowel points only by stripping off punctuation, accents or other cantillation marks.
@@ -41,7 +40,6 @@ Reduce a string to consonants and vowel points only by stripping off punctuation
 
 ```{julia}
 accented = "בִלְהָ֛ה"
-Markdown.parse("> accented = $(accented)")
 ```
 
 Consonants and vowel points only:
@@ -49,7 +47,6 @@ Consonants and vowel points only:
 
 ```{julia}
 unaccented = BiblicalHebrew.rm_accents(accented)
-Markdown.parse("> Value of `unaccented` is " * unaccented)
 ```
 
 ## Test individual characters

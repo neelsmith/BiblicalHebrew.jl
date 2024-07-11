@@ -1,7 +1,7 @@
 name = "BiblicalHebrew"
 uuid = "23d2231d-1fc1-47c2-a612-987552d9b38e"
 authors = ["Neel Smith  <dnsmith.neel@gmail.com>"]
-version = "0.3.5"
+version = "0.4.0"
 
 [deps]
 DocStringExtensions = "ffbed154-4ef7-542d-bbb7-c09d3a79fcae"
