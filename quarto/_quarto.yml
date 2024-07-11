@@ -1,0 +1,79 @@
+project:
+  type: website
+jupyter: julia-1.10  
+theme: spacelab
+execute:
+  freeze: auto
+date: last-modified  
+margin-header: "Built with package version `0.4.0`"
+format:
+  html: 
+    toc: true
+
+
+website:
+  title: "biblicalhebrew"
+  navbar:
+    background: primary
+    search: true
+    left:
+      - text: "Home"
+        file: index.qmd
+      - text: "Concepts"
+        file: concepts/index.qmd           
+      - text: "Tutorials"
+        file: tutorials/index.qmd          
+      - text: "Guides"
+        file: guides/index.qmd           
+      - text: "Reference"
+        file: reference/index.qmd  
+      
+    right:   
+      - icon: github
+        href: https://github.com/neelsmith/BiblicalHebrew.jl
+        aria-label: GitHub
+      - icon: person-circle
+        menu:
+          - text: "About me"
+            href: https://neelsmith.quarto.pub
+          - text: "More of my digital scholarship"
+            href: https://neelsmith.quarto.pub/digschol/
+        aria-label: "More of my work"  
+
+  sidebar:
+    - title: "Tutorials"
+      contents: 
+        - tutorials/index.qmd
+        - text: "---"
+        - tutorials/quickstart.qmd
+
+
+    - title: "Guides"
+      contents:
+        - guides/index.qmd
+        - text: "---"        
+        - guides/niqqud.qmd        
+        - guides/more_ortho.qmd
+        - guides/syllabification.qmd
+        - guides/utils.qmd
+
+
+    - title: "Reference"
+      contents: 
+        - reference/index.qmd
+        - text: "---"
+        - reference/constants.qmd
+        - reference/apis.qmd
+
+
+    - title: "Concepts"
+      contents: 
+        - concepts/index.qmd
+
+        
+
+    - title: "Home"
+      contents:
+        - index.qmd               
+ 
+

@@ -1,0 +1,220 @@
+# Working with vowel points (*niqqud*) and other marks
+
+
+## Vowels
+
+The Unicode specification defines combining characters for the Tiberian vowel points (*niqqud*). The `BiblicalHebrew` package defines character constants that can be used to refer to these combining values (), and offers a parallel suite of functions for composing strings with the vowel points.
+
+
+::: {.callout-note}
+
+For situations where it might be easier to code with character sets such as ASCII or other non-Unicode character sets, the package defines constant names for the consonantal characters of the Hebrew alphabet. (See the [complete list of constants](../reference/constants.qmd) in the reference section of this documentation.) For example:
+
+```{julia}
+#| warning: false
+using BiblicalHebrew
+BiblicalHebrew.aleph_ch
+```
+:::
+
+
+For example, add a *qamats* to an aleph character:
+
+```{julia}
+pointed = qamats('א')
+```
+
+You can also use these functions to append a vowel point to a string.
+
+```{julia}
+qamats("כְת")
+```
+
+You can of course chain these functions. To compose *hateph* vowels, for example, use the `sheva` function, then a function for a vowel:
+
+```{julia}
+hateph_seghol = sheva("א") |> seghol
+```
+
+There is also a suite of functions for adding cantillation and other marks, such as *metheg*.
+
+```{julia}
+qamats_metheg = qamats("א") |> metheg
+```
+
+## Other marks
+
+cantillation or stress: ole
+
+- dagesh and mappiq
+ 
+
+```{julia}
+dagesh("ב")
+```
+
+
+```{julia}
+mappiq("ה")
+```
+
+::: {.callout-warning}
+These are identical in Unicode! (They shouldn't be.)
+:::
+
+
+
+
+- numeric: gershe
+
+
+## Summary of functions for adding vowel points to strings
+
+`qamats`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc qamats
+```
+:::
+
+
+`patah`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc patah
+```
+:::
+
+
+`seghol`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc seghol
+```
+:::
+
+`hiriq`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc hiriq
+```
+:::
+
+`tsere`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc tsere
+```
+:::
+
+`qubbuts`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc qubbuts
+```
+:::
+
+`holam`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc holam
+```
+:::
+
+`sheva`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc sheva
+```
+:::
+
+`metheg`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc metheg
+```
+:::
+
+
+## Cantillation and other notation
+
+
+`ole`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc ole
+```
+:::
+
+`mappiq`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc mappiq
+```
+:::
+
+
+`dagesh`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc dagesh
+```
+:::
+
+`gershe`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc gershe
+```
+:::
+
+`maqaf_join`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc maqaf_join
+```
+:::
+
+

@@ -1,0 +1,463 @@
+# Functions
+
+```{julia}
+#| echo: false
+#| warning: false
+using BiblicalHebrew, Orthography
+```
+
+
+## Exported functions
+
+
+`codept_name`
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc codept_name
+```
+:::
+
+
+
+`hiriq`
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc hiriq
+```
+:::
+
+
+`holam`
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc holam
+```
+:::
+
+
+
+`metheg`
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc metheg
+```
+:::
+
+
+
+`patah`
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc patah
+```
+:::
+
+`qamats`
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc qamats
+```
+:::
+
+`qubbuts`
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc qubbuts
+```
+:::
+
+
+
+`seghol`
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc seghol
+```
+:::
+
+`sheva`
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc sheva
+```
+:::
+
+
+
+`tsere`
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc tsere
+```
+:::
+
+`unpointed`
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc unpointed
+```
+:::
+
+
+
+## Other functions
+
+`BiblicalHebrew.codept`
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+using BiblicalHebrew
+@doc BiblicalHebrew.codept
+```
+:::
+
+
+
+`BiblicalHebrew.codept_split`
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.codept_split
+```
+:::
+
+`BiblicalHebrew.dagesh`
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.dagesh
+```
+:::
+
+`BiblicalHebrew.gershe`
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.gershe
+```
+:::
+
+
+
+`BiblicalHebrew.has_sheva`
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.has_sheva
+```
+:::
+
+
+
+`BiblicalHebrew.has_vowelpoint`
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.has_vowelpoint
+```
+:::
+
+
+
+`BiblicalHebrew.hebrew_chars`
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.hebrew_chars
+```
+:::
+
+
+`BiblicalHebrew.hex`
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.hex
+```
+:::
+
+`BiblicalHebrew.int`
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.int
+```
+:::
+
+
+`BiblicalHebrew.is_alphabetic`
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.is_alphabetic
+```
+:::
+
+
+`BiblicalHebrew.is_begadkepat`
+
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.is_begadkepat
+```
+:::
+
+
+
+`BiblicalHebrew.is_consonant`
+
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.is_consonant
+```
+:::
+
+
+
+
+`BiblicalHebrew.is_guttural`
+
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.is_guttural
+```
+:::
+
+
+
+`BiblicalHebrew.is_long`
+
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.is_long
+```
+:::
+
+
+
+`BiblicalHebrew.is_mater`
+
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.is_mater
+```
+:::
+
+
+
+`BiblicalHebrew.is_vowelpoint`
+
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.is_vowelpoint
+```
+:::
+
+
+
+`BiblicalHebrew.mappiq`
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.mappiq
+```
+:::
+
+
+
+`BiblicalHebrew.maqaf_join`
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.maqaf_join
+```
+:::
+
+
+
+`BiblicalHebrew.ole`
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.ole
+```
+:::
+
+
+
+`BiblicalHebrew.reduced_vowel`
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.reduced_vowel
+```
+:::
+
+`BiblicalHebrew.rm_accents`
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.rm_accents
+```
+:::
+
+
+`BiblicalHebrew.syllabify`
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.syllabify
+```
+:::
+
+`BiblicalHebrew.tokenize_string`
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.tokenize_string
+```
+:::
+
+`BiblicalHebrew.validcps`
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.validcps
+```
+:::
+
+`BiblicalHebrew.ws_chars`
+
+
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.ws_chars
+```
+:::
+

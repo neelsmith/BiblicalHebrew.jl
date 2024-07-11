@@ -1,0 +1,103 @@
+# Utilities for working with character values
+
+
+The `BiblicalHebrew` package includes a few shortcuts for viewing different representations of codepoints that, although generic, can be useful when working with fully pointed Hebrew text.
+
+
+## Some Unicode basics
+
+The Unicode package's `graphemes` function iterates through the graphemes in a string.  If we apply it to the string "מִדְבָּר" and collect the results into a vector, the vector will have four elements, one for each consonant together with any associated points such as vowel points or dagesh.
+
+```{julia}
+using Unicode
+desert = "מִדְבָּר"
+graphemev = graphemes(desert) |> collect
+```
+
+
+We can use `collect` on string values to gather a vector of `Char`s.
+
+```{julia}
+charv = collect(graphemev[1])
+```
+
+
+
+## Codepoints, integers and hexadecimal strings
+
+`BiblicalHebrew.codepoint` gives the integer value of a character.
+
+```{julia}
+using BiblicalHebrew
+BiblicalHebrew.codepoint.(charv)
+```
+
+These are unsigned integers.  If you want signed integers, you can construct signed integers directly from them:
+
+```{julia}
+BiblicalHebrew.codepoint.(charv) .|> Int64
+```
+
+
+
+So these are tautologies:
+
+```{julia}
+(BiblicalHebrew.codepoint.(charv) .|> Char) == 
+(BiblicalHebrew.codepoint.(charv) .|> Int64 .|> Char) == charv
+```
+
+Julia's `string` function displays integers in decimal notation.
+
+```{julia}
+BiblicalHebrew.codepoint.(charv) .|> string
+```
+
+
+`BiblicalHebrew.hex` gets a hex string for codepoints, integers or characters:
+
+```{julia}
+charv .|> BiblicalHebrew.hex
+```
+
+```{julia}
+charv  .|> BiblicalHebrew.codepoint  .|> BiblicalHebrew.hex
+```
+
+
+```{julia}
+charv  .|> BiblicalHebrew.codepoint .|> Int64 .|> BiblicalHebrew.hex
+```
+
+And `BiblicalHebrew.int` converts a hex string into an integer value.
+
+```{julia}
+charv  .|> BiblicalHebrew.codepoint  .|> BiblicalHebrew.hex .|> BiblicalHebrew.int
+```
+
+So this is also a tautology:
+
+```{julia}
+codepoint.(charv) == BiblicalHebrew.codepoint.(charv) .|> BiblicalHebrew.hex .|> BiblicalHebrew.int 
+```
+
+
+## Splitting up sequences of codepoints
+
+
+`BiblicalHebrew.codept_split` works like Julia's `split` function, but by default keeps the separating character value;
+
+```{julia}
+split(desert, charv[2])
+```
+
+```{julia}
+BiblicalHebrew.codept_split(desert, charv[2])
+```
+
+You can override that behavior:
+
+```{julia}
+BiblicalHebrew.codept_split(desert, charv[2]; keep = false)
+```
+

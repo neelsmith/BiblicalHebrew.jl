@@ -1,45 +1,127 @@
 #=
-Functions to simplify composing strings of Hebrew combining characters.
+Functions to simplify composing strings of Hebrew that include Unicode combining characters.
 =#
 
 ## Niqqud
 
-"""Add qamats to string `s`."""
+"""Add qamats to string `s`.
+
+**Example**
+```julia-repl
+julia> qamats("ב")
+"בָ"
+```
+
+$(SIGNATURES)
+"""
 function qamats(s)
     string(s, qamats_ch)
 end
 
-"""Add patah to string `s`."""
+"""Add patah to string `s`.
+
+**Example**
+```
+julia> patah("ב")
+"בַ"
+```
+
+$(SIGNATURES)
+"""
 function patah(s)
     string(s, patah_ch)
 end
 
-"""Add seghol to string `s`."""
+
+"""Add seghol to string `s`.
+
+**Example**
+
+```julia
+julia> seghol("ב")
+"בֶ"
+```
+
+$(SIGNATURES)
+"""
 function seghol(s)
     string(s, seghol_ch)
 end
 
-"""Add hiriq to string `s`."""
+
+
+"""Add hiriq to string `s`.
+
+**Example**
+
+```julia
+julia> hiriq("ב")
+"בִ"
+```
+
+$(SIGNATURES)
+"""
 function hiriq(s)
     string(s, hiriq_ch)
 end
 
-"""Add tsere to string `s`."""
+
+"""Add tsere to string `s`.
+
+**Example**
+
+```julia
+julia> tsere("ב")
+"בֵ"
+```
+
+
+$(SIGNATURES)
+"""
 function tsere(s)
     string(s, tsere_ch)
 end
 
-"""Add qubbuts to string `s`."""
+"""Add qubbuts to string `s`.
+
+**Example**
+
+```julia
+julia> qubbuts("ב")
+"בֻ"
+```
+$(SIGNATURES)
+"""
 function qubbuts(s)
     string(s,qubbuts_ch)
 end
 
-"""Add holam to string `s`."""
+"""Add holam to string `s`.
+
+**Example**
+
+```julia
+julia> holam("ב")
+"בֹ"
+```
+
+$(SIGNATURES)
+"""
 function holam(s)
     string(s,holam_ch)
 end
 
-"""Add sheva to string `s`."""
+"""Add sheva to string `s`.
+
+**Example**
+
+```julia
+julia> sheva("ב")
+"בְ"
+```
+
+$(SIGNATURES)
+"""
 function sheva(s)
     string(s, sheva_ch)
 end
@@ -48,27 +130,93 @@ end
 
 ## Accents and combining punctuation
 
-"""Add metheg to string `s`."""
+"""Add metheg to string `s`.
+
+**Example**
+
+```julia
+julia> qamats("ב") |> metheg
+"בָֽ"
+```
+
+$(SIGNATURES)
+"""
 function metheg(s)
     string(s, metheg_ch)
 end
 
-"""Add accent ole to string `s`."""
+"""Add accent ole to string `s`.
+
+**Example**
+
+```julia
+julia> ole("עוֹלֶה")
+"עוֹלֶה֫"
+```
+
+$(SIGNATURES)
+"""
 function ole(s)
     string(s, ole_ch)
 end
 
-"""Add mappiq to string `s`."""
+"""Add mappiq to string `s`.
+
+**Example**
+
+```julia
+julia> mappiq("ה")
+"הּ"
+```
+
+
+$(SIGNATURES)
+"""
 function mappiq(s)
     string(s, mappiq_ch)
 end
 
-"""Append gershe to string `s`."""
+"""Append gershe to string `s`.
+
+**Example**
+
+```julia
+julia> gershe("ב")
+"ב׳"
+```
+
+$(SIGNATURES)
+"""
 function gershe(s)
     string(s, gershe_ch)
 end
 
-"""Connect a list of tokens together with *maqaf*."""
+"""Connect a list of tokens together with *maqaf*.
+
+**Example**
+
+```julia
+julia> maqaf_join(["עַל", "פְנֵי"])
+"עַל־פְנֵי"
+```
+
+$(SIGNATURES)
+"""
 function maqaf_join(v)
     join(v, maqaf_ch)
+end
+
+"""Join a pair of strings together with *maqaf*.
+
+**Example**
+
+```julia
+julia> maqaf_join("עַל", "פְנֵי")
+"עַל־פְנֵי"
+```
+
+$(SIGNATURES)
+"""
+function maqaf_join(s1::AbstractString, s2::AbstractString)
+    join([s1, s2], maqaf_ch)
 end

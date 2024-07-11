@@ -1,0 +1,89 @@
+# Quick start
+
+
+Create a `HebrewOrthography` object and use it to get metadata about the orthography, to validate strings, and to tokenize strings.
+
+```{julia}
+using BiblicalHebrew, Orthography
+ortho = HebrewOrthography()
+```
+
+
+
+
+### Valid characters
+
+All 84 defined codepoints in the Unicode Hebrew range plus four white-space characters (space, `\n`, `\r` and `\n`) are valid in this orthography.
+
+```{julia}
+codepoints(ortho)
+```
+
+Test whether a string is valid in this orthography:
+
+```{julia}
+validstring("בֵּֽין־פָּארָ֧ן", ortho)
+```
+
+```{julia}
+validstring("Hi, בֵּֽין־פָּארָ֧ן", ortho)
+```
+
+### Tokenization
+
+
+The orthography can identify three categories of token:
+
+```{julia}
+tokentypes(ortho)
+```
+
+Tokenization associates a string value with a token category. Since punctuation like *maqaf* doesn't display properly in this documentation, we'll use the package's `maqaf_join` function to create a construct chain, then tokenize the resulting string.
+
+```{julia}
+s1 = "בֵּֽין"
+```
+
+
+```{julia}
+s2 = "פָּארָ֧ן"
+```
+
+```{julia}
+construct = BiblicalHebrew.maqaf_join([s1,s2])
+```
+
+```{julia}
+tokens = tokenize(construct, ortho)
+```
+
+
+Numeric tokens are followed by *gershe* or *gershayim*. To compose a string for the numeric value 1, the following example passes a named character constant as a parameter to the package's `gershe` function to append a *gershe* to it.
+
+```{julia}
+aleph = string(BiblicalHebrew.aleph_ch)
+one = BiblicalHebrew.gershe(aleph)
+```
+
+```{julia}
+tokenize(one, ortho)
+```
+
+
+## check that each of these is covered
+
+
+`codepoints`
+
+`tokenize`
+
+
+
+`tokentypes`
+
+
+
+
+`validstring`
+
+

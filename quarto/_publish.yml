@@ -1,0 +1,4 @@
+- source: project
+  quarto-pub:
+    - id: 301e648d-85cb-4ca0-a8a3-8db9f3acb93f
+      url: 'https://neelsmith.quarto.pub/biblicalhebrew'

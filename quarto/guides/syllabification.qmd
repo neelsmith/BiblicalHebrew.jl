@@ -1,0 +1,13 @@
+# Syllabification  (TBA)
+
+
+::: {.callout-caution title="Content TBA"}
+Syllabification will be the main focus of the next major release.
+:::
+
+## Outlne of contents in development
+
+- syllabify a word
+- determine vowel length of syllables
+- identify *matres lectionis*
+- identify reduced vowels

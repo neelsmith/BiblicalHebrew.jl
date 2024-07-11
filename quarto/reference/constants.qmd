@@ -1,0 +1,518 @@
+# Constants
+
+```{julia}
+#| echo: false
+using BiblicalHebrew, Orthography
+```
+
+`BiblicalHebrew.aleph_ch`
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.aleph_ch
+```
+:::
+
+
+`BiblicalHebrew.ayin_ch`
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.ayin_ch
+```
+:::
+
+
+
+`BiblicalHebrew.begadkepat`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.begadkepat
+```
+:::
+
+
+`BiblicalHebrew.bet_ch`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.bet_ch
+```
+:::
+
+
+`BiblicalHebrew.consonants`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.consonants
+```
+:::
+
+`BiblicalHebrew.dagesh_ch`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.dagesh_ch
+```
+:::
+
+`BiblicalHebrew.dalet_ch`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.dalet_ch
+```
+:::
+
+`BiblicalHebrew.gershayim_ch`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.gershayim_ch
+```
+:::
+
+
+`BiblicalHebrew.gershe_ch`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.gershe_ch
+```
+:::
+
+
+`BiblicalHebrew.gimel_ch`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.gimel_ch
+```
+:::
+
+
+`BiblicalHebrew.gutturals`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.gutturals
+```
+:::
+
+`BiblicalHebrew.he_ch`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.he_ch
+```
+:::
+
+`BiblicalHebrew.het_ch`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.het_ch
+```
+:::
+
+`BiblicalHebrew.hiriq_ch`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.hiriq_ch
+```
+:::
+
+`BiblicalHebrew.holam_ch`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.holam_ch
+```
+:::
+
+`BiblicalHebrew.kaph_ch`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.kaph_ch
+```
+:::
+
+`BiblicalHebrew.kaph_final_ch`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.kaph_final_ch
+```
+:::
+
+
+`BiblicalHebrew.lamed_ch`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.lamed_ch
+```
+:::
+
+`BiblicalHebrew.mappiq_ch`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.mappiq_ch
+```
+:::
+
+
+`BiblicalHebrew.matres`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.matres
+```
+:::
+
+`BiblicalHebrew.mem_ch`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.mem_ch
+```
+:::
+
+`BiblicalHebrew.mem_final_ch`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.mem_final_ch
+```
+:::
+
+`BiblicalHebrew.metheg_ch`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.metheg_ch
+```
+:::
+
+`BiblicalHebrew.nequddot`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.nequddot
+```
+:::
+
+`BiblicalHebrew.nun_ch`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.nun_ch
+```
+:::
+
+`BiblicalHebrew.nun_final_ch`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.nun_final_ch
+```
+:::
+
+`BiblicalHebrew.ole_ch`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.ole_ch
+```
+:::
+
+`BiblicalHebrew.patah_ch`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.patah_ch
+```
+:::
+
+`BiblicalHebrew.pe_ch`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.pe_ch
+```
+:::
+
+`BiblicalHebrew.pe_final_ch`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.pe_final_ch
+```
+:::
+
+`BiblicalHebrew.qamats_ch`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.qamats_ch
+```
+:::
+
+`BiblicalHebrew.qof_ch`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.qof_ch
+```
+:::
+
+`BiblicalHebrew.qubbuts_ch`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.qubbuts_ch
+```
+:::
+
+`BiblicalHebrew.resh_ch`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.resh_ch
+```
+:::
+
+`BiblicalHebrew.samekh_ch`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.samekh_ch
+```
+:::
+
+`BiblicalHebrew.seghol_ch`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.seghol_ch
+```
+:::
+
+`BiblicalHebrew.sheva_ch`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.sheva_ch
+```
+:::
+
+`BiblicalHebrew.shin`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.shin
+```
+:::
+
+`BiblicalHebrew.shin_dot_ch`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.shin_dot_ch
+```
+:::
+
+`BiblicalHebrew.sin`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.sin
+```
+:::
+
+`BiblicalHebrew.sin_dot_ch`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.sin_dot_ch
+```
+:::
+
+BiblicalHebrew.sin_shin_ch
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.sin_shin_ch
+```
+:::
+
+`BiblicalHebrew.tav_ch`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.tav_ch
+```
+:::
+
+`BiblicalHebrew.tet_ch`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.tet_ch
+```
+:::
+
+`BiblicalHebrew.tsadi_ch`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.tsadi_ch
+```
+:::
+
+`BiblicalHebrew.tsadi_final_ch`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.tsadi_final_ch
+```
+:::
+
+BiblicalHebrew.tsere_ch
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.tsere_ch
+```
+:::
+
+`BiblicalHebrew.vav_ch`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.vav_ch
+```
+:::
+
+`BiblicalHebrew.yod_ch`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.yod_ch
+```
+:::
+
+`BiblicalHebrew.zayin_ch`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc BiblicalHebrew.zayin_ch
+```
+:::
