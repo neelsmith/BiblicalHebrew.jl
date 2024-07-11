@@ -1,5 +1,16 @@
 """True if a Char is a vowel point, a consonant, or one of the Unicode
 combining characters that are part of writing consonantal values.
+
+**Examples**
+
+```julia
+julia> is_alphabetic('א')
+true
+
+julia> is_alphabetic(BiblicalHebrew.qamats_ch)
+true
+```
+
 $(SIGNATURES)
 """
 function is_alphabetic(c::Char)
@@ -8,6 +19,18 @@ end
 
 
 """True if Char is a Hebrew consonant.
+
+
+**Examples**
+
+```julia
+julia> is_consonant('א')
+true
+
+julia> is_consonant(BiblicalHebrew.qamats_ch)
+false
+```
+
 $(SIGNATURES)
 """
 function is_consonant(c::Char)::Bool
@@ -16,6 +39,18 @@ end
 
 
 """True if Char is a Hebrew vowel point.
+
+**Examples**
+
+```julia
+julia> is_vowelpoint('א')
+false
+
+julia> is_vowelpoint(BiblicalHebrew.qamats_ch)
+true
+```
+
+
 $(SIGNATURES)
 """
 function is_vowelpoint(c::Char)::Bool
@@ -79,10 +114,3 @@ $(SIGNATURES)
 function rm_accents(s::S) where S <: AbstractString
     filter(c -> is_alphabetic(c) || c == sheva_ch, s)
 end
-
-#=
-function finalize(s::S)  where S <: AbstractString
-    grs = graphemes(s)
-
-end
-=#

@@ -176,7 +176,17 @@ function mappiq(s)
     string(s, mappiq_ch)
 end
 
-"""Append gershe to string `s`."""
+"""Append gershe to string `s`.
+
+**Example**
+
+```julia
+julia> gershe("ב")
+"ב׳"
+```
+
+$(SIGNATURES)
+"""
 function gershe(s)
     string(s, gershe_ch)
 end
