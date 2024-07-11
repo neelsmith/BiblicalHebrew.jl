@@ -13,6 +13,11 @@ using Documenter, DocStringExtensions
 
 export HebrewOrthography
 
+
+export qamats, patah, seghol, hiriq, tsere, qubbuts, holam, sheva
+export metheg
+
+
 include("char_utils.jl")
 
 include("consts.jl")

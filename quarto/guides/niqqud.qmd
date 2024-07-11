@@ -1,35 +1,35 @@
 # Working with vowel points (*niqqud*)
 
 
-```{julia}
-using BiblicalHebrew, Markdown
-```
-
 
 The Unicode specification defines combining characters for the Tiberian vowel points (*niqqud*).
 
 The `BiblicalHebrew` package defines character constants that can be used to refer to these values (see the complete list of constants in the section "APIs for all constants and functions" of this documentation. It also offers a parallel suite of functions for composing strings with the vowel points.
 
+```{julia}
+#| warning: false
+using BiblicalHebrew
+```
+
 For example, add a *qamats* to an aleph:
 
 ```{julia}
-pointed = BiblicalHebrew.qamats("א")
-Markdown.parse("> pointed = " * pointed)
+pointed = qamats("א")
 ```
 
 
 You can of course chain these functions. To compose *hateph* vowels, for example, use the `sheva` function, then a function for a vowel:
 
 ```{julia}
-hateph_seghol = BiblicalHebrew.sheva("א") |> BiblicalHebrew.seghol
-Markdown.parse("> hateph_seghol is " * hateph_seghol)
+hateph_seghol = sheva("א") |> seghol
+"hateph_seghol is " * hateph_seghol
 ```
 
 There is also a suite of functions for adding accents and other marks, such as *metheg*.
 
 ```{julia}
-qamats_metheg = BiblicalHebrew.qamats("א") |> BiblicalHebrew.metheg
-Markdown.parse("> qamats_metheg is " * qamats_metheg)
+qamats_metheg = qamats("א") |> metheg
+"qamats_metheg is " * qamats_metheg
 ```
 
 
@@ -37,86 +37,85 @@ Markdown.parse("> qamats_metheg is " * qamats_metheg)
 
 
 
-`BiblicalHebrew.qamats`
+`qamats`
 
 :::{.callout-note appearance="minimal"}
 ```{julia}
 #| echo: false
 #| warning: false
-@doc BiblicalHebrew.qamats
+@doc qamats
 ```
 :::
 
 
-`BiblicalHebrew.patah`
+`patah`
 
 :::{.callout-note appearance="minimal"}
 ```{julia}
 #| echo: false
 #| warning: false
-@doc BiblicalHebrew.patah
+@doc patah
 ```
 :::
 
 
-`BiblicalHebrew.seghol`
+`seghol`
 
 :::{.callout-note appearance="minimal"}
 ```{julia}
 #| echo: false
 #| warning: false
-@doc BiblicalHebrew.seghol
+@doc seghol
 ```
 :::
 
-`BiblicalHebrew.hiriq`
+`hiriq`
 
 :::{.callout-note appearance="minimal"}
 ```{julia}
 #| echo: false
 #| warning: false
-@doc BiblicalHebrew.hiriq
+@doc hiriq
 ```
 :::
 
-`BiblicalHebrew.tsere`
+`tsere`
 
 :::{.callout-note appearance="minimal"}
 ```{julia}
 #| echo: false
 #| warning: false
-@doc BiblicalHebrew.tsere
+@doc tsere
 ```
 :::
 
-`BiblicalHebrew.qubbuts`
+`qubbuts`
 
 :::{.callout-note appearance="minimal"}
 ```{julia}
 #| echo: false
 #| warning: false
-@doc BiblicalHebrew.qubbuts
+@doc qubbuts
 ```
 :::
 
-`BiblicalHebrew.holam`
+`holam`
 
 :::{.callout-note appearance="minimal"}
 ```{julia}
 #| echo: false
 #| warning: false
-@doc `BiblicalHebrew.holam`
-
+@doc holam
 ```
 :::
 
-`BiblicalHebrew.sheva`
+`sheva`
 
 :::{.callout-note appearance="minimal"}
 ```{julia}
 #| echo: false
 #| warning: false
-@doc BiblicalHebrew.sheva
+@doc sheva
 ```
 :::
 
@@ -124,13 +123,13 @@ Markdown.parse("> qamats_metheg is " * qamats_metheg)
 ## Other accent marks
 
 
-`BiblicalHebrew.metheg`
+`metheg`
 
 :::{.callout-note appearance="minimal"}
 ```{julia}
 #| echo: false
 #| warning: false
-@doc BiblicalHebrew.metheg
+@doc metheg
 ```
 :::
 
