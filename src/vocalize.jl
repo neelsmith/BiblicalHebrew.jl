@@ -145,12 +145,33 @@ function metheg(s)
     string(s, metheg_ch)
 end
 
-"""Add accent ole to string `s`."""
+"""Add accent ole to string `s`.
+
+**Example**
+
+```julia
+julia> ole("עוֹלֶה")
+"עוֹלֶה֫"
+```
+
+$(SIGNATURES)
+"""
 function ole(s)
     string(s, ole_ch)
 end
 
-"""Add mappiq to string `s`."""
+"""Add mappiq to string `s`.
+
+**Example**
+
+```julia
+julia> mappiq("ה")
+"הּ"
+```
+
+
+$(SIGNATURES)
+"""
 function mappiq(s)
     string(s, mappiq_ch)
 end
@@ -160,7 +181,32 @@ function gershe(s)
     string(s, gershe_ch)
 end
 
-"""Connect a list of tokens together with *maqaf*."""
+"""Connect a list of tokens together with *maqaf*.
+
+**Example**
+
+```julia
+julia> maqaf_join(["עַל", "פְנֵי"])
+"עַל־פְנֵי"
+```
+
+$(SIGNATURES)
+"""
 function maqaf_join(v)
     join(v, maqaf_ch)
+end
+
+"""Join a pair of strings together with *maqaf*.
+
+**Example**
+
+```julia
+julia> maqaf_join("עַל", "פְנֵי")
+"עַל־פְנֵי"
+```
+
+$(SIGNATURES)
+"""
+function maqaf_join(s1::AbstractString, s2::AbstractString)
+    join([s1, s2], maqaf_ch)
 end

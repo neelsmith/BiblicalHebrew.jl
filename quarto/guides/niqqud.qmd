@@ -49,9 +49,13 @@ cantillation or stress: ole
 - dagesh and mappiq
  
 
-
 ```{julia}
 dagesh("ב")
+```
+
+
+```{julia}
+mappiq("ה")
 ```
 
 ::: {.callout-warning}
@@ -148,10 +152,6 @@ These are identical in Unicode! (They shouldn't be.)
 ```
 :::
 
-
-## Cantillation and other notation
-
-
 `metheg`
 
 :::{.callout-note appearance="minimal"}
@@ -162,13 +162,17 @@ These are identical in Unicode! (They shouldn't be.)
 ```
 :::
 
-`BiblicalHebrew.ole`
+
+## Cantillation and other notation
+
+
+`ole`
 
 :::{.callout-note appearance="minimal"}
 ```{julia}
 #| echo: false
 #| warning: false
-@doc BiblicalHebrew.ole
+@doc ole
 ```
 :::
 
@@ -182,6 +186,17 @@ These are identical in Unicode! (They shouldn't be.)
 ```
 :::
 
+
+`dagesh`
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc dagesh
+```
+:::
+
 `gershe`
 
 :::{.callout-note appearance="minimal"}
@@ -192,13 +207,13 @@ These are identical in Unicode! (They shouldn't be.)
 ```
 :::
 
-`BiblicalHebrew.maqaf_join`
+`maqaf_join`
 
 :::{.callout-note appearance="minimal"}
 ```{julia}
 #| echo: false
 #| warning: false
-@doc BiblicalHebrew.maqaf_join
+@doc maqaf_join
 ```
 :::
 
