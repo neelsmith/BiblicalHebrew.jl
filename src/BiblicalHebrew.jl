@@ -18,6 +18,9 @@ export qamats, patah, seghol, hiriq, tsere, qubbuts, holam, sheva
 export metheg
 
 
+export codept_name
+export unpointed
+
 include("char_utils.jl")
 
 include("consts.jl")

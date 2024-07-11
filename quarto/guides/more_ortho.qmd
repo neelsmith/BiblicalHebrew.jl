@@ -1,19 +1,21 @@
 
 # Other functions for working with Hebrew orthography
 
-```{julia}
-using BiblicalHebrew
-using Markdown
-```
+
 
 
 The package includes a number of functions to simplify working with the orthography of Biblical Hebrew.
+
+```{julia}
+#| warning: false
+using BiblicalHebrew
+```
 
 Find the Unicode label for a codepoint.
 
 ```{julia}
 ch = 'ד'
-BiblicalHebrew.codept_name(ch)
+codept_name(ch)
 ```
 
 
@@ -25,8 +27,6 @@ Original pointed string:
 
 ```{julia}
 s1 = "הַדְּבָרִ֗ים"
-Markdown.parse("> s1 = $(s1)")
-
 ```
 
 Consonantal reduction:

@@ -49,6 +49,15 @@ function dagesh(s)::String
 end
 
 """Reduce a string to consonantal representation by removing all pointing and accents.
+
+
+**Example**
+
+```julia
+julia> unpointed("קָמ")
+"קמ"
+```
+
 $(SIGNATURES)
 """
 function unpointed(s::S) where S <: AbstractString
@@ -58,6 +67,9 @@ end
 """Remove all accents and cantillation marks from a string,
 leaving only consonants, vowel points and dagesh/mappiq (the
 same code point in Unicode).
+
+
+
 $(SIGNATURES)
 """
 function rm_accents(s::S) where S <: AbstractString
