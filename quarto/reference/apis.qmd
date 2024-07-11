@@ -1,6 +1,150 @@
 # Functions
 
+```{julia}
+#| echo: false
+#| warning: false
+using BiblicalHebrew, Orthography
+```
 
+
+## Exported functions
+
+
+`codept_name`
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc codept_name
+```
+:::
+
+
+
+`hiriq`
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc hiriq
+```
+:::
+
+
+`holam`
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc holam
+```
+:::
+
+
+
+`metheg`
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc metheg
+```
+:::
+
+
+
+`patah`
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc patah
+```
+:::
+
+`qamats`
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc qamats
+```
+:::
+
+`qubbuts`
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc qubbuts
+```
+:::
+
+
+
+`seghol`
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc seghol
+```
+:::
+
+`sheva`
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc sheva
+```
+:::
+
+
+
+`tsere`
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc tsere
+```
+:::
+
+`unpointed`
+
+
+:::{.callout-note appearance="minimal"}
+```{julia}
+#| echo: false
+#| warning: false
+@doc unpointed
+```
+:::
+
+
+
+## Other functions
 
 `BiblicalHebrew.codept`
 
@@ -14,17 +158,6 @@ using BiblicalHebrew
 ```
 :::
 
-
-`BiblicalHebrew.codept_name`
-
-
-:::{.callout-note appearance="minimal"}
-```{julia}
-#| echo: false
-#| warning: false
-@doc BiblicalHebrew.codept_name
-```
-:::
 
 
 `BiblicalHebrew.codept_split`
@@ -110,31 +243,6 @@ using BiblicalHebrew
 @doc BiblicalHebrew.hex
 ```
 :::
-
-
-`BiblicalHebrew.hiriq`
-
-
-:::{.callout-note appearance="minimal"}
-```{julia}
-#| echo: false
-#| warning: false
-@doc BiblicalHebrew.hiriq
-```
-:::
-
-
-`BiblicalHebrew.holam`
-
-
-:::{.callout-note appearance="minimal"}
-```{julia}
-#| echo: false
-#| warning: false
-@doc BiblicalHebrew.holam
-```
-:::
-
 
 `BiblicalHebrew.int`
 
@@ -245,8 +353,7 @@ using BiblicalHebrew
 
 
 
-BiblicalHebrew.mappiq
-
+`BiblicalHebrew.mappiq`
 
 
 :::{.callout-note appearance="minimal"}
@@ -270,16 +377,7 @@ BiblicalHebrew.mappiq
 ```
 :::
 
-`BiblicalHebrew.metheg`
 
-
-:::{.callout-note appearance="minimal"}
-```{julia}
-#| echo: false
-#| warning: false
-@doc BiblicalHebrew.metheg
-```
-:::
 
 `BiblicalHebrew.ole`
 
@@ -292,38 +390,7 @@ BiblicalHebrew.mappiq
 ```
 :::
 
-`BiblicalHebrew.patah`
 
-
-:::{.callout-note appearance="minimal"}
-```{julia}
-#| echo: false
-#| warning: false
-@doc BiblicalHebrew.patah
-```
-:::
-
-`BiblicalHebrew.qamats`
-
-
-:::{.callout-note appearance="minimal"}
-```{julia}
-#| echo: false
-#| warning: false
-@doc BiblicalHebrew.qamats
-```
-:::
-
-`BiblicalHebrew.qubbuts`
-
-
-:::{.callout-note appearance="minimal"}
-```{julia}
-#| echo: false
-#| warning: false
-@doc BiblicalHebrew.qubbuts
-```
-:::
 
 `BiblicalHebrew.reduced_vowel`
 
@@ -347,27 +414,6 @@ BiblicalHebrew.mappiq
 ```
 :::
 
-`BiblicalHebrew.seghol`
-
-
-:::{.callout-note appearance="minimal"}
-```{julia}
-#| echo: false
-#| warning: false
-@doc BiblicalHebrew.seghol
-```
-:::
-
-`BiblicalHebrew.sheva`
-
-
-:::{.callout-note appearance="minimal"}
-```{julia}
-#| echo: false
-#| warning: false
-@doc BiblicalHebrew.sheva
-```
-:::
 
 `BiblicalHebrew.syllabify`
 
@@ -391,28 +437,6 @@ BiblicalHebrew.mappiq
 ```
 :::
 
-`BiblicalHebrew.tsere`
-
-
-:::{.callout-note appearance="minimal"}
-```{julia}
-#| echo: false
-#| warning: false
-@doc BiblicalHebrew.tsere
-```
-:::
-
-`BiblicalHebrew.unpointed`
-
-
-:::{.callout-note appearance="minimal"}
-```{julia}
-#| echo: false
-#| warning: false
-@doc BiblicalHebrew.unpointed
-```
-:::
-
 `BiblicalHebrew.validcps`
 
 
@@ -427,7 +451,7 @@ BiblicalHebrew.mappiq
 `BiblicalHebrew.ws_chars`
 
 
-## Why are all these doc broken?
+
 
 :::{.callout-note appearance="minimal"}
 ```{julia}
@@ -436,6 +460,11 @@ BiblicalHebrew.mappiq
 @doc BiblicalHebrew.ws_chars
 ```
 :::
+
+
+
+## Functions imported from `Orthography`
+
 
 `codepoints`
 

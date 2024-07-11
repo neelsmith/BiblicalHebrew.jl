@@ -2,8 +2,6 @@
 # Other functions for working with Hebrew orthography
 
 
-
-
 The package includes a number of functions to simplify working with the orthography of Biblical Hebrew.
 
 ```{julia}
